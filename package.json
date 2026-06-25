@@ -23,7 +23,6 @@
     "@aws-amplify/backend": "^1.22.0",
     "@aws-amplify/backend-cli": "^1.8.2",
     "@eslint/js": "^10.0.1",
-    "@rolldown/binding-darwin-x64": "^1.0.2",
     "@types/aws-lambda": "^8.10.161",
     "@types/node": "^24.12.3",
     "@types/react": "^19.2.14",
@@ -40,5 +39,8 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-darwin-x64": "^1.0.2"
   }
 }
