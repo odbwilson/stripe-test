@@ -1,0 +1,457 @@
+type Payment @aws_iam @aws_cognito_user_pools {
+  paymentIntentId: String!
+  amount: Int!
+  currency: String!
+  status: String!
+  userId: String
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+type StripeCustomer @aws_iam @aws_cognito_user_pools {
+  email: AWSEmail!
+  name: String
+  stripeCustomerId: String!
+  defaultPaymentMethodId: String
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+type StripeSubscription @aws_iam @aws_cognito_user_pools {
+  stripeCustomerId: String!
+  stripeSubscriptionId: String!
+  status: String!
+  planAmount: Int!
+  currency: String!
+  trialStart: AWSDateTime
+  trialEnd: AWSDateTime
+  currentPeriodStart: AWSDateTime
+  currentPeriodEnd: AWSDateTime
+  canceledAt: AWSDateTime
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+input AmplifyAIConversationTurnErrorInput {
+  errorType: String!
+  message: String!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelPaymentConnection @aws_iam @aws_cognito_user_pools {
+  items: [Payment]!
+  nextToken: String
+}
+
+input ModelPaymentFilterInput {
+  paymentIntentId: ModelStringInput
+  amount: ModelIntInput
+  currency: ModelStringInput
+  status: ModelStringInput
+  userId: ModelStringInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelPaymentFilterInput]
+  or: [ModelPaymentFilterInput]
+  not: ModelPaymentFilterInput
+  owner: ModelStringInput
+}
+
+type Query {
+  getPayment(id: ID!): Payment @aws_iam @aws_cognito_user_pools
+  listPayments(filter: ModelPaymentFilterInput, limit: Int, nextToken: String): ModelPaymentConnection @aws_iam @aws_cognito_user_pools
+  getStripeCustomer(id: ID!): StripeCustomer @aws_iam @aws_cognito_user_pools
+  listStripeCustomers(filter: ModelStripeCustomerFilterInput, limit: Int, nextToken: String): ModelStripeCustomerConnection @aws_iam @aws_cognito_user_pools
+  getStripeSubscription(id: ID!): StripeSubscription @aws_iam @aws_cognito_user_pools
+  listStripeSubscriptions(filter: ModelStripeSubscriptionFilterInput, limit: Int, nextToken: String): ModelStripeSubscriptionConnection @aws_iam @aws_cognito_user_pools
+}
+
+input ModelPaymentConditionInput {
+  paymentIntentId: ModelStringInput
+  amount: ModelIntInput
+  currency: ModelStringInput
+  status: ModelStringInput
+  userId: ModelStringInput
+  and: [ModelPaymentConditionInput]
+  or: [ModelPaymentConditionInput]
+  not: ModelPaymentConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreatePaymentInput {
+  paymentIntentId: String!
+  amount: Int!
+  currency: String!
+  status: String!
+  userId: String
+  id: ID
+}
+
+input UpdatePaymentInput {
+  paymentIntentId: String
+  amount: Int
+  currency: String
+  status: String
+  userId: String
+  id: ID!
+}
+
+input DeletePaymentInput {
+  id: ID!
+}
+
+type Mutation {
+  createPayment(input: CreatePaymentInput!, condition: ModelPaymentConditionInput): Payment @aws_iam @aws_cognito_user_pools
+  updatePayment(input: UpdatePaymentInput!, condition: ModelPaymentConditionInput): Payment @aws_iam @aws_cognito_user_pools
+  deletePayment(input: DeletePaymentInput!, condition: ModelPaymentConditionInput): Payment @aws_iam @aws_cognito_user_pools
+  createStripeCustomer(input: CreateStripeCustomerInput!, condition: ModelStripeCustomerConditionInput): StripeCustomer @aws_iam @aws_cognito_user_pools
+  updateStripeCustomer(input: UpdateStripeCustomerInput!, condition: ModelStripeCustomerConditionInput): StripeCustomer @aws_iam @aws_cognito_user_pools
+  deleteStripeCustomer(input: DeleteStripeCustomerInput!, condition: ModelStripeCustomerConditionInput): StripeCustomer @aws_iam @aws_cognito_user_pools
+  createStripeSubscription(input: CreateStripeSubscriptionInput!, condition: ModelStripeSubscriptionConditionInput): StripeSubscription @aws_iam @aws_cognito_user_pools
+  updateStripeSubscription(input: UpdateStripeSubscriptionInput!, condition: ModelStripeSubscriptionConditionInput): StripeSubscription @aws_iam @aws_cognito_user_pools
+  deleteStripeSubscription(input: DeleteStripeSubscriptionInput!, condition: ModelStripeSubscriptionConditionInput): StripeSubscription @aws_iam @aws_cognito_user_pools
+}
+
+input ModelSubscriptionPaymentFilterInput {
+  paymentIntentId: ModelSubscriptionStringInput
+  amount: ModelSubscriptionIntInput
+  currency: ModelSubscriptionStringInput
+  status: ModelSubscriptionStringInput
+  userId: ModelSubscriptionStringInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionPaymentFilterInput]
+  or: [ModelSubscriptionPaymentFilterInput]
+  owner: ModelStringInput
+}
+
+type Subscription {
+  onCreatePayment(filter: ModelSubscriptionPaymentFilterInput, owner: String): Payment @aws_subscribe(mutations: ["createPayment"]) @aws_iam @aws_cognito_user_pools
+  onUpdatePayment(filter: ModelSubscriptionPaymentFilterInput, owner: String): Payment @aws_subscribe(mutations: ["updatePayment"]) @aws_iam @aws_cognito_user_pools
+  onDeletePayment(filter: ModelSubscriptionPaymentFilterInput, owner: String): Payment @aws_subscribe(mutations: ["deletePayment"]) @aws_iam @aws_cognito_user_pools
+  onCreateStripeCustomer(filter: ModelSubscriptionStripeCustomerFilterInput, owner: String): StripeCustomer @aws_subscribe(mutations: ["createStripeCustomer"]) @aws_iam @aws_cognito_user_pools
+  onUpdateStripeCustomer(filter: ModelSubscriptionStripeCustomerFilterInput, owner: String): StripeCustomer @aws_subscribe(mutations: ["updateStripeCustomer"]) @aws_iam @aws_cognito_user_pools
+  onDeleteStripeCustomer(filter: ModelSubscriptionStripeCustomerFilterInput, owner: String): StripeCustomer @aws_subscribe(mutations: ["deleteStripeCustomer"]) @aws_iam @aws_cognito_user_pools
+  onCreateStripeSubscription(filter: ModelSubscriptionStripeSubscriptionFilterInput, owner: String): StripeSubscription @aws_subscribe(mutations: ["createStripeSubscription"]) @aws_iam @aws_cognito_user_pools
+  onUpdateStripeSubscription(filter: ModelSubscriptionStripeSubscriptionFilterInput, owner: String): StripeSubscription @aws_subscribe(mutations: ["updateStripeSubscription"]) @aws_iam @aws_cognito_user_pools
+  onDeleteStripeSubscription(filter: ModelSubscriptionStripeSubscriptionFilterInput, owner: String): StripeSubscription @aws_subscribe(mutations: ["deleteStripeSubscription"]) @aws_iam @aws_cognito_user_pools
+}
+
+type ModelStripeCustomerConnection @aws_iam @aws_cognito_user_pools {
+  items: [StripeCustomer]!
+  nextToken: String
+}
+
+input ModelStripeCustomerFilterInput {
+  email: ModelStringInput
+  name: ModelStringInput
+  stripeCustomerId: ModelStringInput
+  defaultPaymentMethodId: ModelStringInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelStripeCustomerFilterInput]
+  or: [ModelStripeCustomerFilterInput]
+  not: ModelStripeCustomerFilterInput
+  owner: ModelStringInput
+}
+
+input ModelStripeCustomerConditionInput {
+  email: ModelStringInput
+  name: ModelStringInput
+  stripeCustomerId: ModelStringInput
+  defaultPaymentMethodId: ModelStringInput
+  and: [ModelStripeCustomerConditionInput]
+  or: [ModelStripeCustomerConditionInput]
+  not: ModelStripeCustomerConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreateStripeCustomerInput {
+  email: AWSEmail!
+  name: String
+  stripeCustomerId: String!
+  defaultPaymentMethodId: String
+  id: ID
+}
+
+input UpdateStripeCustomerInput {
+  email: AWSEmail
+  name: String
+  stripeCustomerId: String
+  defaultPaymentMethodId: String
+  id: ID!
+}
+
+input DeleteStripeCustomerInput {
+  id: ID!
+}
+
+input ModelSubscriptionStripeCustomerFilterInput {
+  email: ModelSubscriptionStringInput
+  name: ModelSubscriptionStringInput
+  stripeCustomerId: ModelSubscriptionStringInput
+  defaultPaymentMethodId: ModelSubscriptionStringInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionStripeCustomerFilterInput]
+  or: [ModelSubscriptionStripeCustomerFilterInput]
+  owner: ModelStringInput
+}
+
+type ModelStripeSubscriptionConnection @aws_iam @aws_cognito_user_pools {
+  items: [StripeSubscription]!
+  nextToken: String
+}
+
+input ModelStripeSubscriptionFilterInput {
+  stripeCustomerId: ModelStringInput
+  stripeSubscriptionId: ModelStringInput
+  status: ModelStringInput
+  planAmount: ModelIntInput
+  currency: ModelStringInput
+  trialStart: ModelStringInput
+  trialEnd: ModelStringInput
+  currentPeriodStart: ModelStringInput
+  currentPeriodEnd: ModelStringInput
+  canceledAt: ModelStringInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelStripeSubscriptionFilterInput]
+  or: [ModelStripeSubscriptionFilterInput]
+  not: ModelStripeSubscriptionFilterInput
+  owner: ModelStringInput
+}
+
+input ModelStripeSubscriptionConditionInput {
+  stripeCustomerId: ModelStringInput
+  stripeSubscriptionId: ModelStringInput
+  status: ModelStringInput
+  planAmount: ModelIntInput
+  currency: ModelStringInput
+  trialStart: ModelStringInput
+  trialEnd: ModelStringInput
+  currentPeriodStart: ModelStringInput
+  currentPeriodEnd: ModelStringInput
+  canceledAt: ModelStringInput
+  and: [ModelStripeSubscriptionConditionInput]
+  or: [ModelStripeSubscriptionConditionInput]
+  not: ModelStripeSubscriptionConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreateStripeSubscriptionInput {
+  stripeCustomerId: String!
+  stripeSubscriptionId: String!
+  status: String!
+  planAmount: Int!
+  currency: String!
+  trialStart: AWSDateTime
+  trialEnd: AWSDateTime
+  currentPeriodStart: AWSDateTime
+  currentPeriodEnd: AWSDateTime
+  canceledAt: AWSDateTime
+  id: ID
+}
+
+input UpdateStripeSubscriptionInput {
+  stripeCustomerId: String
+  stripeSubscriptionId: String
+  status: String
+  planAmount: Int
+  currency: String
+  trialStart: AWSDateTime
+  trialEnd: AWSDateTime
+  currentPeriodStart: AWSDateTime
+  currentPeriodEnd: AWSDateTime
+  canceledAt: AWSDateTime
+  id: ID!
+}
+
+input DeleteStripeSubscriptionInput {
+  id: ID!
+}
+
+input ModelSubscriptionStripeSubscriptionFilterInput {
+  stripeCustomerId: ModelSubscriptionStringInput
+  stripeSubscriptionId: ModelSubscriptionStringInput
+  status: ModelSubscriptionStringInput
+  planAmount: ModelSubscriptionIntInput
+  currency: ModelSubscriptionStringInput
+  trialStart: ModelSubscriptionStringInput
+  trialEnd: ModelSubscriptionStringInput
+  currentPeriodStart: ModelSubscriptionStringInput
+  currentPeriodEnd: ModelSubscriptionStringInput
+  canceledAt: ModelSubscriptionStringInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionStripeSubscriptionFilterInput]
+  or: [ModelSubscriptionStripeSubscriptionFilterInput]
+  owner: ModelStringInput
+}

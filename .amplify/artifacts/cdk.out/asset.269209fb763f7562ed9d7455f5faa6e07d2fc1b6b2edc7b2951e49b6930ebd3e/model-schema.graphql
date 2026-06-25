@@ -1,0 +1,30 @@
+type Payment @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  paymentIntentId: String!
+  amount: Int!
+  currency: String!
+  status: String!
+  userId: String
+}
+
+type StripeCustomer @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  email: AWSEmail!
+  name: String
+  stripeCustomerId: String!
+  defaultPaymentMethodId: String
+}
+
+type StripeSubscription @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  stripeCustomerId: String!
+  stripeSubscriptionId: String!
+  status: String!
+  planAmount: Int!
+  currency: String!
+  trialStart: AWSDateTime
+  trialEnd: AWSDateTime
+  currentPeriodStart: AWSDateTime
+  currentPeriodEnd: AWSDateTime
+  canceledAt: AWSDateTime
+}

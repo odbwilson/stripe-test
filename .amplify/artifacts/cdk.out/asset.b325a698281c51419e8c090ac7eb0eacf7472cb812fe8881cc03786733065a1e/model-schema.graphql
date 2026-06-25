@@ -1,0 +1,8 @@
+type Payment @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  paymentIntentId: String!
+  amount: Int!
+  currency: String!
+  status: String!
+  userId: String
+}

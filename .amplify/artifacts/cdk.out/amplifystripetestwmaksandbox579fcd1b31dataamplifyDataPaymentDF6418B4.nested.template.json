@@ -1,0 +1,2171 @@
+{
+ "Parameters": {
+  "DynamoDBModelTableReadIOPS": {
+   "Type": "Number",
+   "Default": 5,
+   "Description": "The number of read IOPS the table should support."
+  },
+  "DynamoDBModelTableWriteIOPS": {
+   "Type": "Number",
+   "Default": 5,
+   "Description": "The number of write IOPS the table should support."
+  },
+  "DynamoDBBillingMode": {
+   "Type": "String",
+   "Default": "PAY_PER_REQUEST",
+   "AllowedValues": [
+    "PAY_PER_REQUEST",
+    "PROVISIONED"
+   ],
+   "Description": "Configure @model types to create DynamoDB tables with PAY_PER_REQUEST or PROVISIONED billing modes."
+  },
+  "DynamoDBEnablePointInTimeRecovery": {
+   "Type": "String",
+   "Default": "false",
+   "AllowedValues": [
+    "true",
+    "false"
+   ],
+   "Description": "Whether to enable Point in Time Recovery on the table."
+  },
+  "DynamoDBEnableServerSideEncryption": {
+   "Type": "String",
+   "Default": "true",
+   "AllowedValues": [
+    "true",
+    "false"
+   ],
+   "Description": "Enable server side encryption powered by KMS."
+  },
+  "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputsamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomPro44F3E1B6": {
+   "Type": "String"
+  },
+  "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId": {
+   "Type": "String"
+  },
+  "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name": {
+   "Type": "String"
+  },
+  "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref": {
+   "Type": "String"
+  },
+  "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef": {
+   "Type": "String"
+  },
+  "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef": {
+   "Type": "String"
+  }
+ },
+ "Conditions": {
+  "HasEnvironmentParameter": {
+   "Fn::Not": [
+    {
+     "Fn::Equals": [
+      "NONE",
+      "NONE"
+     ]
+    }
+   ]
+  },
+  "ShouldUsePayPerRequestBilling": {
+   "Fn::Equals": [
+    {
+     "Ref": "DynamoDBBillingMode"
+    },
+    "PAY_PER_REQUEST"
+   ]
+  },
+  "ShouldUsePointInTimeRecovery": {
+   "Fn::Equals": [
+    {
+     "Ref": "DynamoDBEnablePointInTimeRecovery"
+    },
+    "true"
+   ]
+  },
+  "CDKMetadataAvailable": {
+   "Fn::Or": [
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "af-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-3"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-4"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-northwest-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-2"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "il-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "sa-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-1"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Equals": [
+      {
+       "Ref": "AWS::Region"
+      },
+      "us-west-2"
+     ]
+    }
+   ]
+  }
+ },
+ "Resources": {
+  "PaymentTable": {
+   "Type": "Custom::AmplifyDynamoDBTable",
+   "Properties": {
+    "ServiceToken": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputsamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomPro44F3E1B6"
+    },
+    "tableName": {
+     "Fn::Join": [
+      "",
+      [
+       "Payment-",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "-NONE"
+      ]
+     ]
+    },
+    "attributeDefinitions": [
+     {
+      "attributeName": "id",
+      "attributeType": "S"
+     }
+    ],
+    "keySchema": [
+     {
+      "attributeName": "id",
+      "keyType": "HASH"
+     }
+    ],
+    "provisionedThroughput": {
+     "Fn::If": [
+      "ShouldUsePayPerRequestBilling",
+      {
+       "Ref": "AWS::NoValue"
+      },
+      {
+       "ReadCapacityUnits": {
+        "Ref": "DynamoDBModelTableReadIOPS"
+       },
+       "WriteCapacityUnits": {
+        "Ref": "DynamoDBModelTableWriteIOPS"
+       }
+      }
+     ]
+    },
+    "sseSpecification": {
+     "sseEnabled": false
+    },
+    "streamSpecification": {
+     "streamViewType": "NEW_AND_OLD_IMAGES"
+    },
+    "deletionProtectionEnabled": false,
+    "allowDestructiveGraphqlSchemaUpdates": true,
+    "replaceTableUponGsiUpdate": true,
+    "pointInTimeRecoverySpecification": {
+     "Fn::If": [
+      "ShouldUsePointInTimeRecovery",
+      {
+       "PointInTimeRecoveryEnabled": true
+      },
+      {
+       "Ref": "AWS::NoValue"
+      }
+     ]
+    },
+    "billingMode": {
+     "Fn::If": [
+      "ShouldUsePayPerRequestBilling",
+      "PAY_PER_REQUEST",
+      {
+       "Ref": "AWS::NoValue"
+      }
+     ]
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentTable/Default/Default"
+   }
+  },
+  "PaymentIAMRole2F99C78C": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "appsync.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "Policies": [
+     {
+      "PolicyDocument": {
+       "Statement": [
+        {
+         "Action": [
+          "dynamodb:BatchGetItem",
+          "dynamodb:BatchWriteItem",
+          "dynamodb:PutItem",
+          "dynamodb:DeleteItem",
+          "dynamodb:GetItem",
+          "dynamodb:Scan",
+          "dynamodb:Query",
+          "dynamodb:UpdateItem",
+          "dynamodb:ConditionCheckItem",
+          "dynamodb:DescribeTable",
+          "dynamodb:GetRecords",
+          "dynamodb:GetShardIterator"
+         ],
+         "Effect": "Allow",
+         "Resource": [
+          {
+           "Fn::Sub": [
+            "arn:${AWS::Partition}:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${tablename}",
+            {
+             "tablename": {
+              "Fn::Join": [
+               "",
+               [
+                "Payment-",
+                {
+                 "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+                },
+                "-NONE"
+               ]
+              ]
+             }
+            }
+           ]
+          },
+          {
+           "Fn::Sub": [
+            "arn:${AWS::Partition}:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${tablename}/*",
+            {
+             "tablename": {
+              "Fn::Join": [
+               "",
+               [
+                "Payment-",
+                {
+                 "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+                },
+                "-NONE"
+               ]
+              ]
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "Version": "2012-10-17"
+      },
+      "PolicyName": "DynamoDBAccess"
+     }
+    ],
+    "RoleName": {
+     "Fn::Join": [
+      "",
+      [
+       "PaymentIAMRole1a13f2-",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "-NONE"
+      ]
+     ]
+    },
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "amplifyData"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ]
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentIAMRole/Resource"
+   }
+  },
+  "PaymentDataSource": {
+   "Type": "AWS::AppSync::DataSource",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DynamoDBConfig": {
+     "AwsRegion": {
+      "Ref": "AWS::Region"
+     },
+     "TableName": {
+      "Fn::Select": [
+       1,
+       {
+        "Fn::Split": [
+         "/",
+         {
+          "Fn::Select": [
+           5,
+           {
+            "Fn::Split": [
+             ":",
+             {
+              "Fn::GetAtt": [
+               "PaymentTable",
+               "TableArn"
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "Name": "PaymentTable",
+    "ServiceRoleArn": {
+     "Fn::GetAtt": [
+      "PaymentIAMRole2F99C78C",
+      "Arn"
+     ]
+    },
+    "Type": "AMAZON_DYNAMODB"
+   },
+   "DependsOn": [
+    "PaymentIAMRole2F99C78C"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentDataSource/Resource"
+   }
+  },
+  "QuerygetPaymentauth0FunctionQuerygetPaymentauth0FunctionAppSyncFunctionA8437F55": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QuerygetPaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6b25c9b572c67e0f7ad41cb8019a90825f3db4b02a0a15b837c7a82dcb302060.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerygetPaymentauth0Function/QuerygetPaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "QuerygetPaymentpostAuth0FunctionQuerygetPaymentpostAuth0FunctionAppSyncFunction68179674": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QuerygetPaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerygetPaymentpostAuth0Function/QuerygetPaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "QueryGetPaymentDataResolverFnQueryGetPaymentDataResolverFnAppSyncFunction21C5F2A7": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QueryGetPaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/08f4d557693d96c1a4efba0f9dc91330e4b19772fd5477c156468843e3d9cb5e.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/4c6a2d29f01c6091bd1d9afe16e5849d456c96f17c3b215938c8067399532719.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QueryGetPaymentDataResolverFn/QueryGetPaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "GetPaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "getPayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "QuerygetPaymentauth0FunctionQuerygetPaymentauth0FunctionAppSyncFunctionA8437F55",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "QuerygetPaymentpostAuth0FunctionQuerygetPaymentpostAuth0FunctionAppSyncFunction68179674",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "QueryGetPaymentDataResolverFnQueryGetPaymentDataResolverFnAppSyncFunction21C5F2A7",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"getPayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n$util.qr($ctx.stash.put(\"tableName\", \"",
+       {
+        "Fn::Select": [
+         1,
+         {
+          "Fn::Split": [
+           "/",
+           {
+            "Fn::Select": [
+             5,
+             {
+              "Fn::Split": [
+               ":",
+               {
+                "Fn::GetAtt": [
+                 "PaymentTable",
+                 "TableArn"
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Query"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/queryGetPaymentResolver"
+   }
+  },
+  "QuerylistPaymentsauth0FunctionQuerylistPaymentsauth0FunctionAppSyncFunction68A58BD8": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QuerylistPaymentsauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6b25c9b572c67e0f7ad41cb8019a90825f3db4b02a0a15b837c7a82dcb302060.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerylistPaymentsauth0Function/QuerylistPaymentsauth0Function.AppSyncFunction"
+   }
+  },
+  "QuerylistPaymentspostAuth0FunctionQuerylistPaymentspostAuth0FunctionAppSyncFunction1B3BABEB": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QuerylistPaymentspostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerylistPaymentspostAuth0Function/QuerylistPaymentspostAuth0Function.AppSyncFunction"
+   }
+  },
+  "QueryListPaymentsDataResolverFnQueryListPaymentsDataResolverFnAppSyncFunctionF34D2167": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QueryListPaymentsDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/9fcbe070ecd3023c5bf5b966fa9584757db9762eef123bad0820bd87591b2174.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cc01911d0269d4080ea57505dc445dfc315ef7ad85d3d9d4ea1357858bff451d.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QueryListPaymentsDataResolverFn/QueryListPaymentsDataResolverFn.AppSyncFunction"
+   }
+  },
+  "ListPaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "listPayments",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "QuerylistPaymentsauth0FunctionQuerylistPaymentsauth0FunctionAppSyncFunction68A58BD8",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "QuerylistPaymentspostAuth0FunctionQuerylistPaymentspostAuth0FunctionAppSyncFunction1B3BABEB",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "QueryListPaymentsDataResolverFnQueryListPaymentsDataResolverFnAppSyncFunctionF34D2167",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"listPayments\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n$util.qr($ctx.stash.put(\"tableName\", \"",
+       {
+        "Fn::Select": [
+         1,
+         {
+          "Fn::Split": [
+           "/",
+           {
+            "Fn::Select": [
+             5,
+             {
+              "Fn::Split": [
+               ":",
+               {
+                "Fn::GetAtt": [
+                 "PaymentTable",
+                 "TableArn"
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Query"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/queryListPaymentsResolver"
+   }
+  },
+  "MutationcreatePaymentinit0FunctionMutationcreatePaymentinit0FunctionAppSyncFunction25F585C1": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationcreatePaymentinit0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a183ddccbd956316c38ef97177b8f088ef0826f62023323f5ae6053d348ccffc.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationcreatePaymentinit0Function/MutationcreatePaymentinit0Function.AppSyncFunction"
+   }
+  },
+  "MutationcreatePaymentauth0FunctionMutationcreatePaymentauth0FunctionAppSyncFunction8BE22054": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationcreatePaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/51120dcb2f12c461ce9a38962710e27ef531a4c43cfdf2b57e564172e7b78fc0.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationcreatePaymentauth0Function/MutationcreatePaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "MutationcreatePaymentpostAuth0FunctionMutationcreatePaymentpostAuth0FunctionAppSyncFunctionA63FFC29": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationcreatePaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationcreatePaymentpostAuth0Function/MutationcreatePaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "MutationCreatePaymentDataResolverFnMutationCreatePaymentDataResolverFnAppSyncFunctionB0D58985": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationCreatePaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/09fd1775cc992e655f52f2d6915e022896871b002c2a18f7613f8a164f551516.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/f4a52b72209a9dfa197b5e7367a5c378c5bb86de6e29ddd9e48b49a3fe54b249.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationCreatePaymentDataResolverFn/MutationCreatePaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "CreatePaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "createPayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "MutationcreatePaymentinit0FunctionMutationcreatePaymentinit0FunctionAppSyncFunction25F585C1",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationcreatePaymentauth0FunctionMutationcreatePaymentauth0FunctionAppSyncFunction8BE22054",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationcreatePaymentpostAuth0FunctionMutationcreatePaymentpostAuth0FunctionAppSyncFunctionA63FFC29",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationCreatePaymentDataResolverFnMutationCreatePaymentDataResolverFnAppSyncFunctionB0D58985",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"createPayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n$util.qr($ctx.stash.put(\"tableName\", \"",
+       {
+        "Fn::Select": [
+         1,
+         {
+          "Fn::Split": [
+           "/",
+           {
+            "Fn::Select": [
+             5,
+             {
+              "Fn::Split": [
+               ":",
+               {
+                "Fn::GetAtt": [
+                 "PaymentTable",
+                 "TableArn"
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Mutation"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/mutationCreatePaymentResolver"
+   }
+  },
+  "MutationupdatePaymentinit0FunctionMutationupdatePaymentinit0FunctionAppSyncFunction603A7F05": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationupdatePaymentinit0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/06db846fd14e6fc371f22b12b5545ba8e2dbfeda85d8c8d586c71c282166657b.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationupdatePaymentinit0Function/MutationupdatePaymentinit0Function.AppSyncFunction"
+   }
+  },
+  "MutationupdatePaymentauth0FunctionMutationupdatePaymentauth0FunctionAppSyncFunction054F5898": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationupdatePaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1f5fed297da9c32ae3af922bf3a38ccf23b956078887d16891ec06c20c64722c.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/2ff38b8997d0b50e3614eeb1692a808333d8ef8c31051f734ae788387ae0e451.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationupdatePaymentauth0Function/MutationupdatePaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "MutationupdatePaymentpostAuth0FunctionMutationupdatePaymentpostAuth0FunctionAppSyncFunctionA0FA692E": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationupdatePaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationupdatePaymentpostAuth0Function/MutationupdatePaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "MutationUpdatePaymentDataResolverFnMutationUpdatePaymentDataResolverFnAppSyncFunction9841256E": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationUpdatePaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/474bf0776ec2164a13191d1a0a9e057154931e4918fea5086f49850d02a5371b.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/f4a52b72209a9dfa197b5e7367a5c378c5bb86de6e29ddd9e48b49a3fe54b249.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationUpdatePaymentDataResolverFn/MutationUpdatePaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "UpdatePaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "updatePayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "MutationupdatePaymentinit0FunctionMutationupdatePaymentinit0FunctionAppSyncFunction603A7F05",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationupdatePaymentauth0FunctionMutationupdatePaymentauth0FunctionAppSyncFunction054F5898",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationupdatePaymentpostAuth0FunctionMutationupdatePaymentpostAuth0FunctionAppSyncFunctionA0FA692E",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationUpdatePaymentDataResolverFnMutationUpdatePaymentDataResolverFnAppSyncFunction9841256E",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"updatePayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n$util.qr($ctx.stash.put(\"tableName\", \"",
+       {
+        "Fn::Select": [
+         1,
+         {
+          "Fn::Split": [
+           "/",
+           {
+            "Fn::Select": [
+             5,
+             {
+              "Fn::Split": [
+               ":",
+               {
+                "Fn::GetAtt": [
+                 "PaymentTable",
+                 "TableArn"
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Mutation"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/mutationUpdatePaymentResolver"
+   }
+  },
+  "MutationdeletePaymentauth0FunctionMutationdeletePaymentauth0FunctionAppSyncFunction7ADD179B": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationdeletePaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1f5fed297da9c32ae3af922bf3a38ccf23b956078887d16891ec06c20c64722c.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/867fb7d7eb8e4127b6d0136b82c5c3f74a52eb410297086859986f8e7e4b02aa.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationdeletePaymentauth0Function/MutationdeletePaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "MutationdeletePaymentpostAuth0FunctionMutationdeletePaymentpostAuth0FunctionAppSyncFunction1B3D75FB": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationdeletePaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationdeletePaymentpostAuth0Function/MutationdeletePaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "MutationDeletePaymentDataResolverFnMutationDeletePaymentDataResolverFnAppSyncFunction830414F0": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "PaymentDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationDeletePaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/4f7907d1209a2c9953a0c053df402c634e359546d70c7cc5c2e8e21ea734880f.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/f4a52b72209a9dfa197b5e7367a5c378c5bb86de6e29ddd9e48b49a3fe54b249.vtl"
+    }
+   },
+   "DependsOn": [
+    "PaymentDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationDeletePaymentDataResolverFn/MutationDeletePaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "DeletePaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "deletePayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "MutationdeletePaymentauth0FunctionMutationdeletePaymentauth0FunctionAppSyncFunction7ADD179B",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationdeletePaymentpostAuth0FunctionMutationdeletePaymentpostAuth0FunctionAppSyncFunction1B3D75FB",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "MutationDeletePaymentDataResolverFnMutationDeletePaymentDataResolverFnAppSyncFunction830414F0",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"deletePayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n$util.qr($ctx.stash.put(\"tableName\", \"",
+       {
+        "Fn::Select": [
+         1,
+         {
+          "Fn::Split": [
+           "/",
+           {
+            "Fn::Select": [
+             5,
+             {
+              "Fn::Split": [
+               ":",
+               {
+                "Fn::GetAtt": [
+                 "PaymentTable",
+                 "TableArn"
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Mutation"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/mutationDeletePaymentResolver"
+   }
+  },
+  "SubscriptiononCreatePaymentauth0FunctionSubscriptiononCreatePaymentauth0FunctionAppSyncFunction76E725F0": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptiononCreatePaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3b6d810ef43cdbd93ef462c40b0df0328b89e04f1473a4f82f1178da1f1d5aa0.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononCreatePaymentauth0Function/SubscriptiononCreatePaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "SubscriptiononCreatePaymentpostAuth0FunctionSubscriptiononCreatePaymentpostAuth0FunctionAppSyncFunction5C80BC3A": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptiononCreatePaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononCreatePaymentpostAuth0Function/SubscriptiononCreatePaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "SubscriptionOnCreatePaymentDataResolverFnSubscriptionOnCreatePaymentDataResolverFnAppSyncFunctionC8374435": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptionOnCreatePaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fe3c43ada4b9d681a5e2312663ef7a73386424d73b73e51f8e2e9d4b50f7c502.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e0cff47fb007f0bbf2a4e43ca256d6aa7ec109821769fd79fa7c5e83f0e7f9fc.vtl"
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptionOnCreatePaymentDataResolverFn/SubscriptionOnCreatePaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "SubscriptiononCreatePaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "onCreatePayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "SubscriptiononCreatePaymentauth0FunctionSubscriptiononCreatePaymentauth0FunctionAppSyncFunction76E725F0",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "SubscriptiononCreatePaymentpostAuth0FunctionSubscriptiononCreatePaymentpostAuth0FunctionAppSyncFunction5C80BC3A",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "SubscriptionOnCreatePaymentDataResolverFnSubscriptionOnCreatePaymentDataResolverFnAppSyncFunctionC8374435",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onCreatePayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Subscription"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/subscriptionOnCreatePaymentResolver"
+   }
+  },
+  "SubscriptiononUpdatePaymentauth0FunctionSubscriptiononUpdatePaymentauth0FunctionAppSyncFunctionF4651FE8": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptiononUpdatePaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3b6d810ef43cdbd93ef462c40b0df0328b89e04f1473a4f82f1178da1f1d5aa0.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononUpdatePaymentauth0Function/SubscriptiononUpdatePaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "SubscriptiononUpdatePaymentpostAuth0FunctionSubscriptiononUpdatePaymentpostAuth0FunctionAppSyncFunction09FE7613": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptiononUpdatePaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononUpdatePaymentpostAuth0Function/SubscriptiononUpdatePaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "SubscriptionOnUpdatePaymentDataResolverFnSubscriptionOnUpdatePaymentDataResolverFnAppSyncFunction1E58E150": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptionOnUpdatePaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fe3c43ada4b9d681a5e2312663ef7a73386424d73b73e51f8e2e9d4b50f7c502.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e0cff47fb007f0bbf2a4e43ca256d6aa7ec109821769fd79fa7c5e83f0e7f9fc.vtl"
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptionOnUpdatePaymentDataResolverFn/SubscriptionOnUpdatePaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "SubscriptiononUpdatePaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "onUpdatePayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "SubscriptiononUpdatePaymentauth0FunctionSubscriptiononUpdatePaymentauth0FunctionAppSyncFunctionF4651FE8",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "SubscriptiononUpdatePaymentpostAuth0FunctionSubscriptiononUpdatePaymentpostAuth0FunctionAppSyncFunction09FE7613",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "SubscriptionOnUpdatePaymentDataResolverFnSubscriptionOnUpdatePaymentDataResolverFnAppSyncFunction1E58E150",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onUpdatePayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Subscription"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/subscriptionOnUpdatePaymentResolver"
+   }
+  },
+  "SubscriptiononDeletePaymentauth0FunctionSubscriptiononDeletePaymentauth0FunctionAppSyncFunction81157C72": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptiononDeletePaymentauth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3b6d810ef43cdbd93ef462c40b0df0328b89e04f1473a4f82f1178da1f1d5aa0.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononDeletePaymentauth0Function/SubscriptiononDeletePaymentauth0Function.AppSyncFunction"
+   }
+  },
+  "SubscriptiononDeletePaymentpostAuth0FunctionSubscriptiononDeletePaymentpostAuth0FunctionAppSyncFunction505C3A65": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptiononDeletePaymentpostAuth0Function",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononDeletePaymentpostAuth0Function/SubscriptiononDeletePaymentpostAuth0Function.AppSyncFunction"
+   }
+  },
+  "SubscriptionOnDeletePaymentDataResolverFnSubscriptionOnDeletePaymentDataResolverFnAppSyncFunction8E2E8F66": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "SubscriptionOnDeletePaymentDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fe3c43ada4b9d681a5e2312663ef7a73386424d73b73e51f8e2e9d4b50f7c502.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e0cff47fb007f0bbf2a4e43ca256d6aa7ec109821769fd79fa7c5e83f0e7f9fc.vtl"
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptionOnDeletePaymentDataResolverFn/SubscriptionOnDeletePaymentDataResolverFn.AppSyncFunction"
+   }
+  },
+  "SubscriptiononDeletePaymentResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "onDeletePayment",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "SubscriptiononDeletePaymentauth0FunctionSubscriptiononDeletePaymentauth0FunctionAppSyncFunction81157C72",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "SubscriptiononDeletePaymentpostAuth0FunctionSubscriptiononDeletePaymentpostAuth0FunctionAppSyncFunction505C3A65",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "SubscriptionOnDeletePaymentDataResolverFnSubscriptionOnDeletePaymentDataResolverFnAppSyncFunction8E2E8F66",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onDeletePayment\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Subscription"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/subscriptionOnDeletePaymentResolver"
+   }
+  },
+  "PaymentOwnerDataResolverFnPaymentOwnerDataResolverFnAppSyncFunction67044D28": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "PaymentOwnerDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/041534e5fd916595f752318f161512d7c7f83b9f2cf32d0f0be381c12253ff68.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/064303962e481067b44300212516363b99aaee539b6bafaf756fdd83ff0b60f0.vtl"
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentOwnerDataResolverFn/PaymentOwnerDataResolverFn.AppSyncFunction"
+   }
+  },
+  "PaymentownerResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    "FieldName": "owner",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "PaymentOwnerDataResolverFnPaymentOwnerDataResolverFnAppSyncFunction67044D28",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Payment\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"owner\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Payment"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/paymentOwnerResolver"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WOwW6DMAyGn6X34LVU084rVY/bBLtXJjEoBRwUO60qxLtP0KnTTr8/+ZP955C/vsF2gzfJrOuy3tcwfZAouUrRdqZo+AsjDqQUFygCO68+sClJQoqWTJFEw/CHDT9nvMl5cnfGIbgavrHu6YBCxuMAUxn6hx16mg2Oo9zZwnRc9WN9RMXqefI/nRLbpUQRuPFtirg2+v3cXynORvZnFCEVeF/CyB4OyXakS4F5cT+TjknNuq4UW8/tbDg4gou8XPMcdjvYbi7ifRYTqx8Iykf+AKrUF/42AQAA"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/CDKMetadata/Default"
+   },
+   "Condition": "CDKMetadataAvailable"
+  }
+ },
+ "Outputs": {
+  "GetAttPaymentTableStreamArn": {
+   "Description": "Your DynamoDB table StreamArn.",
+   "Value": {
+    "Fn::GetAtt": [
+     "PaymentTable",
+     "TableStreamArn"
+    ]
+   },
+   "Export": {
+    "Name": {
+     "Fn::Join": [
+      ":",
+      [
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "GetAtt:PaymentTable:StreamArn"
+      ]
+     ]
+    }
+   }
+  },
+  "GetAttPaymentTableName": {
+   "Description": "Your DynamoDB table name.",
+   "Value": {
+    "Fn::Join": [
+     "",
+     [
+      "Payment-",
+      {
+       "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+      },
+      "-NONE"
+     ]
+    ]
+   },
+   "Export": {
+    "Name": {
+     "Fn::Join": [
+      ":",
+      [
+       {
+        "Ref": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+       },
+       "GetAtt:PaymentTable:Name"
+      ]
+     ]
+    }
+   }
+  }
+ }
+}

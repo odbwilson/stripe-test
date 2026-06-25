@@ -1,0 +1,5035 @@
+{
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    },
+    {
+      "type": "aws:cdk:stack-tags",
+      "data": [
+        {
+          "key": "amplify:deployment-type",
+          "value": "sandbox"
+        },
+        {
+          "key": "created-by",
+          "value": "amplify"
+        }
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/deploymentType": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "deploymentType"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/region": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "region"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/userPoolId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "userPoolId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/webClientId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "webClientId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/identityPoolId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "identityPoolId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/authRegion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "authRegion"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/allowUnauthenticatedIdentities": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "allowUnauthenticatedIdentities"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/signupAttributes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "signupAttributes"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/usernameAttributes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "usernameAttributes"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/verificationMechanisms": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "verificationMechanisms"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/passwordPolicyMinLength": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "passwordPolicyMinLength"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/passwordPolicyRequirements": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "passwordPolicyRequirements"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/mfaConfiguration": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "mfaConfiguration"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/mfaTypes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "mfaTypes"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/passwordlessOptions": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "passwordlessOptions"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/socialProviders": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "socialProviders"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/oauthCognitoDomain": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthCognitoDomain"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/oauthScope": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthScope"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/oauthRedirectSignIn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthRedirectSignIn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/oauthRedirectSignOut": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthRedirectSignOut"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/oauthResponseType": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthResponseType"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/oauthClientId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthClientId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/groups": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "groups"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/awsAppsyncApiId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "awsAppsyncApiId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/awsAppsyncApiEndpoint": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "awsAppsyncApiEndpoint"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/awsAppsyncAuthenticationType": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "awsAppsyncAuthenticationType"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/awsAppsyncRegion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "awsAppsyncRegion"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/amplifyApiModelSchemaS3Uri": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyApiModelSchemaS3Uri"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/awsAppsyncAdditionalAuthenticationTypes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "awsAppsyncAdditionalAuthenticationTypes"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/definedFunctions": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "definedFunctions"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, @aws-amplify/backend-function, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/customOutputs": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "customOutputs"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/backend-output-storage...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend-output-storage, Object.addOutput in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:63:9)",
+        "...node internals, @aws-amplify/backend-deployer..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifystripetestwmaksandbox579fcd1b31authamplifyAuthUserPool2431C18FRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31authamplifyAuthUserPool2431C18FRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifystripetestwmaksandbox579fcd1b31authamplifyAuthUserPoolAppClientA540075ERef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31authamplifyAuthUserPoolAppClientA540075ERef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth.NestedStack/auth.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "auth179371D7"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/DynamoDBModelTableReadIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableReadIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/DynamoDBModelTableWriteIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableWriteIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/DynamoDBBillingMode": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBBillingMode"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/DynamoDBEnablePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnablePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/DynamoDBEnableServerSideEncryption": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnableServerSideEncryption"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 2
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 2
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthUserPool2431C18FRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthUserPool2431C18FRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/reference-to-amplifystripetestwmaksandbox579fcd1b31functionNestedStackfunctionNestedStackResource9E916F7AOutputs.amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaDCFE4C96Arn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31functionNestedStackfunctionNestedStackResource9E916F7AOutputsamplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaDCFE4C96Arn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/reference-to-amplifystripetestwmaksandbox579fcd1b31functionNestedStackfunctionNestedStackResource9E916F7AOutputs.amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambda5392922DArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31functionNestedStackfunctionNestedStackResource9E916F7AOutputsamplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambda5392922DArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84GraphQLUrl": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84GraphQLUrl"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBF397800ADestinationBucketArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBF397800ADestinationBucketArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifystripetestwmaksandbox579fcd1b31datastripewebhooklambda91A79930Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31datastripewebhooklambda91A79930Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifystripetestwmaksandbox579fcd1b31datastripewebhooklambdaFunctionUrl8ED69703FunctionUrl": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31datastripewebhooklambdaFunctionUrl8ED69703FunctionUrl"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data.NestedStack/data.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "data7552DF31"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaDCFE4C96Arn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaDCFE4C96Arn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambda5392922DArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambda5392922DArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaDCFE4C96Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaDCFE4C96Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambda5392922DRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambda5392922DRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaFunctionUrlB2E36C77FunctionUrl": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31functioncreatepaymentintentlambdaFunctionUrlB2E36C77FunctionUrl"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambdaFunctionUrl2D10D704FunctionUrl": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31functionsubscriptionmanagerlambdaFunctionUrl2D10D704FunctionUrl"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function.NestedStack/function.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "function1351588B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifyAuth/IdentityPool": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthIdentityPool3FDE84CC"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...defineBackend in @aws-amplify/backend...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:9:17)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/modelIntrospectionSchemaBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "modelIntrospectionSchemaBucketF566B665"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend..."
+      ]
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AMPLIFYDATAGRAPHQLENDPOINTParameter1C2CBB16"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.map (:)",
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_BUCKET_NAMEParameter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMABUCKETNAMEParameter47BF4F44"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.map (:)",
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_KEYParameter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMAKEYParameterB6AEAE8A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.map (:)",
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/AMPLIFY_DATA_DEFAULT_NAMEParameter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AMPLIFYDATADEFAULTNAMEParameterE7C23CC4"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/backend...",
+        "Array.map (:)",
+        "...<anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "stripewebhooklambdaF97E31A6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/invoke-function-url": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "stripewebhooklambdainvokefunctionurl8EDC785B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:29:42)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/invoke-function": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "stripewebhooklambdainvokefunctionF2142DA4"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:29:42)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/create-payment-intent-lambda/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createpaymentintentlambdaE97C2BE0"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/create-payment-intent-lambda/invoke-function-url": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createpaymentintentlambdainvokefunctionurlA3C6C0F6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:23:48)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/create-payment-intent-lambda/invoke-function": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createpaymentintentlambdainvokefunctionCBCF57FB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:23:48)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/subscription-manager-lambda/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "subscriptionmanagerlambda9AE5A51D"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/subscription-manager-lambda/invoke-function-url": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "subscriptionmanagerlambdainvokefunctionurl929A312C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:26:53)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/subscription-manager-lambda/invoke-function": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "subscriptionmanagerlambdainvokefunction4B95A0B5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:26:53)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifyAuth/UserPool/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthUserPool4BA7F805"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifyAuth/UserPoolAppClient/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthUserPoolAppClient2626C6F8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)",
+        "...@aws-amplify/backend..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifyAuth/authenticatedUserRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/auth-construct, @aws-amplify/backend-auth, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/GraphQLAPI/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataGraphQLAPI42A6FA33"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/GraphQLAPI/TransformerSchema": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataGraphQLAPITransformerSchemaFF50A789"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/GraphQLAPI/NONE_DS": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "NONE_DS"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventB9F4F9D4Arn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventB9F4F9D4Arn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource86290833"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/DynamoDBModelTableReadIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableReadIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/DynamoDBModelTableWriteIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableWriteIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/DynamoDBBillingMode": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBBillingMode"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/DynamoDBEnablePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnablePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/DynamoDBEnableServerSideEncryption": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnableServerSideEncryption"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/HasEnvironmentParameter": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "HasEnvironmentParameter"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/ShouldUsePayPerRequestBilling": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ShouldUsePayPerRequestBilling"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/ShouldUsePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ShouldUsePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentTable": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Payment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/CustomTablePaymentTable": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Payment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/GetAttPaymentTableStreamArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetAttPaymentTableStreamArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/GetAttPaymentTableName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetAttPaymentTableName"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentIAMRole": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "PaymentIAMRole"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentDataSource": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "PaymentTable"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/queryGetPaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetPaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Query.getPayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/queryListPaymentsResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ListPaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Query.listPayments"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/mutationCreatePaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CreatePaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.createPayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/mutationUpdatePaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "UpdatePaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.updatePayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/mutationDeletePaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DeletePaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.deletePayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/subscriptionOnCreatePaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreatePaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onCreatePayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/subscriptionOnUpdatePaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdatePaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onUpdatePayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/subscriptionOnDeletePaymentResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeletePaymentResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onDeletePayment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/paymentOwnerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PaymentownerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Payment.owner"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputs.amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventB9F4F9D4Arn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputsamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomPro44F3E1B6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment.NestedStack/Payment.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataPaymentNestedStackPaymentNestedStackResource519EF20D"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/DynamoDBModelTableReadIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableReadIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/DynamoDBModelTableWriteIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableWriteIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/DynamoDBBillingMode": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBBillingMode"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/DynamoDBEnablePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnablePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/DynamoDBEnableServerSideEncryption": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnableServerSideEncryption"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/HasEnvironmentParameter": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "HasEnvironmentParameter"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/ShouldUsePayPerRequestBilling": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ShouldUsePayPerRequestBilling"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/ShouldUsePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ShouldUsePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerTable": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/CustomTableStripeCustomerTable": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/GetAttStripeCustomerTableStreamArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetAttStripeCustomerTableStreamArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/GetAttStripeCustomerTableName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetAttStripeCustomerTableName"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerIAMRole": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomerIAMRole"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerDataSource": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomerTable"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/queryGetStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Query.getStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/queryListStripeCustomersResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ListStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Query.listStripeCustomers"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/mutationCreateStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CreateStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.createStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/mutationUpdateStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "UpdateStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.updateStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/mutationDeleteStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DeleteStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.deleteStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/subscriptionOnCreateStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreateStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onCreateStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/subscriptionOnUpdateStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdateStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onUpdateStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/subscriptionOnDeleteStripeCustomerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeleteStripeCustomerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onDeleteStripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/stripeCustomerOwnerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeCustomerownerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomer.owner"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputs.amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventB9F4F9D4Arn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputsamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomPro44F3E1B6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/amplifystripetestwmaksandbox579fcd1b31dataamplifyDataStripeCustomerStripeCustomerTable619BA89DTableArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31dataamplifyDataStripeCustomerStripeCustomerTable619BA89DTableArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer.NestedStack/StripeCustomer.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataStripeCustomerNestedStackStripeCustomerNestedStackResourceA431320E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/DynamoDBModelTableReadIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableReadIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/DynamoDBModelTableWriteIOPS": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBModelTableWriteIOPS"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/DynamoDBBillingMode": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBBillingMode"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/DynamoDBEnablePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnablePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/DynamoDBEnableServerSideEncryption": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBEnableServerSideEncryption"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/HasEnvironmentParameter": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "HasEnvironmentParameter"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/ShouldUsePayPerRequestBilling": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ShouldUsePayPerRequestBilling"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/ShouldUsePointInTimeRecovery": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ShouldUsePointInTimeRecovery"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionTable": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/CustomTableStripeSubscriptionTable": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/GetAttStripeSubscriptionTableStreamArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetAttStripeSubscriptionTableStreamArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/GetAttStripeSubscriptionTableName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetAttStripeSubscriptionTableName"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionIAMRole": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscriptionIAMRole"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionDataSource": [
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscriptionTable"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/queryGetStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Query.getStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/queryListStripeSubscriptionsResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ListStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Query.listStripeSubscriptions"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/mutationCreateStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CreateStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.createStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/mutationUpdateStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "UpdateStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.updateStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/mutationDeleteStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DeleteStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Mutation.deleteStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/subscriptionOnCreateStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreateStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onCreateStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/subscriptionOnUpdateStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdateStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onUpdateStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/subscriptionOnDeleteStripeSubscriptionResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeleteStripeSubscriptionResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Subscription.onDeleteStripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/stripeSubscriptionOwnerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeSubscriptionownerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscription.owner"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputs.amplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEventB9F4F9D4Arn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9037D2C6Outputsamplifystripetestwmaksandbox579fcd1b31dataamplifyDataAmplifyTableManagerTableManagerCustomPro44F3E1B6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPI33989C84ApiId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/reference-to-amplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31dataamplifyDataGraphQLAPINONEDSA5153412Name"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthauthenticatedUserRoleFD1B8B19Ref"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthunauthenticatedUserRoleA31615CDRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/reference-to-amplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputs.amplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifystripetestwmaksandbox579fcd1b31authNestedStackauthNestedStackResourceDD3B2016Outputsamplifystripetestwmaksandbox579fcd1b31authamplifyAuthIdentityPool787E83DCRef"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/amplifystripetestwmaksandbox579fcd1b31dataamplifyDataStripeSubscriptionStripeSubscriptionTableA8343D4FTableArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifystripetestwmaksandbox579fcd1b31dataamplifyDataStripeSubscriptionStripeSubscriptionTableA8343D4FTableArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend, node internals, @aws-amplify/backend-deployer...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription.NestedStack/StripeSubscription.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataStripeSubscriptionNestedStackStripeSubscriptionNestedStackResourceD85DDDCB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/modelIntrospectionSchemaBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "modelIntrospectionSchemaBucketPolicy4DAB0D15"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/modelIntrospectionSchemaBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "modelIntrospectionSchemaBucketAutoDeleteObjectsCustomResourceFE57309F"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/modelIntrospectionSchemaBucketDeployment/AwsCliLayer/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "modelIntrospectionSchemaBucketDeploymentAwsCliLayer13C432F7"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/modelIntrospectionSchemaBucketDeployment/CustomResource-1536MiB/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "modelIntrospectionSchemaBucketDeploymentCustomResource1536MiB104B97EC"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "stripewebhooklambdaServiceRole81EC8172"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/FunctionUrl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "stripewebhooklambdaFunctionUrl3C926117"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:29:42)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/create-payment-intent-lambda/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createpaymentintentlambdaServiceRoleD2C21637"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/create-payment-intent-lambda/FunctionUrl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createpaymentintentlambdaFunctionUrlFE149B7A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:23:48)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/subscription-manager-lambda/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "subscriptionmanagerlambdaServiceRoleA806FCAD"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/subscription-manager-lambda/FunctionUrl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "subscriptionmanagerlambdaFunctionUrlC3774840"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...NodejsFunction.addFunctionUrl in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:26:53)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/GraphQLAPI/NONE_DS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataGraphQLAPINONEDS684BF699"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "NONE_DS"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AmplifyTableWaiterStateMachine060600BC"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentIAMRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PaymentIAMRole2F99C78C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "PaymentIAMRole"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentDataSource/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PaymentDataSource"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "PaymentTable"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerygetPaymentauth0Function/QuerygetPaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerygetPaymentauth0FunctionQuerygetPaymentauth0FunctionAppSyncFunctionA8437F55"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerygetPaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerygetPaymentpostAuth0Function/QuerygetPaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerygetPaymentpostAuth0FunctionQuerygetPaymentpostAuth0FunctionAppSyncFunction68179674"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerygetPaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QueryGetPaymentDataResolverFn/QueryGetPaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QueryGetPaymentDataResolverFnQueryGetPaymentDataResolverFnAppSyncFunction21C5F2A7"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QueryGetPaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerylistPaymentsauth0Function/QuerylistPaymentsauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerylistPaymentsauth0FunctionQuerylistPaymentsauth0FunctionAppSyncFunction68A58BD8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerylistPaymentsauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QuerylistPaymentspostAuth0Function/QuerylistPaymentspostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerylistPaymentspostAuth0FunctionQuerylistPaymentspostAuth0FunctionAppSyncFunction1B3BABEB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerylistPaymentspostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/QueryListPaymentsDataResolverFn/QueryListPaymentsDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QueryListPaymentsDataResolverFnQueryListPaymentsDataResolverFnAppSyncFunctionF34D2167"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QueryListPaymentsDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationcreatePaymentinit0Function/MutationcreatePaymentinit0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreatePaymentinit0FunctionMutationcreatePaymentinit0FunctionAppSyncFunction25F585C1"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreatePaymentinit0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationcreatePaymentauth0Function/MutationcreatePaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreatePaymentauth0FunctionMutationcreatePaymentauth0FunctionAppSyncFunction8BE22054"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreatePaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationcreatePaymentpostAuth0Function/MutationcreatePaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreatePaymentpostAuth0FunctionMutationcreatePaymentpostAuth0FunctionAppSyncFunctionA63FFC29"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreatePaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationCreatePaymentDataResolverFn/MutationCreatePaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationCreatePaymentDataResolverFnMutationCreatePaymentDataResolverFnAppSyncFunctionB0D58985"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationCreatePaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationupdatePaymentinit0Function/MutationupdatePaymentinit0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdatePaymentinit0FunctionMutationupdatePaymentinit0FunctionAppSyncFunction603A7F05"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdatePaymentinit0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationupdatePaymentauth0Function/MutationupdatePaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdatePaymentauth0FunctionMutationupdatePaymentauth0FunctionAppSyncFunction054F5898"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdatePaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationupdatePaymentpostAuth0Function/MutationupdatePaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdatePaymentpostAuth0FunctionMutationupdatePaymentpostAuth0FunctionAppSyncFunctionA0FA692E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdatePaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationUpdatePaymentDataResolverFn/MutationUpdatePaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationUpdatePaymentDataResolverFnMutationUpdatePaymentDataResolverFnAppSyncFunction9841256E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationUpdatePaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationdeletePaymentauth0Function/MutationdeletePaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationdeletePaymentauth0FunctionMutationdeletePaymentauth0FunctionAppSyncFunction7ADD179B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationdeletePaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationdeletePaymentpostAuth0Function/MutationdeletePaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationdeletePaymentpostAuth0FunctionMutationdeletePaymentpostAuth0FunctionAppSyncFunction1B3D75FB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationdeletePaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/MutationDeletePaymentDataResolverFn/MutationDeletePaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationDeletePaymentDataResolverFnMutationDeletePaymentDataResolverFnAppSyncFunction830414F0"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationDeletePaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononCreatePaymentauth0Function/SubscriptiononCreatePaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreatePaymentauth0FunctionSubscriptiononCreatePaymentauth0FunctionAppSyncFunction76E725F0"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononCreatePaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononCreatePaymentpostAuth0Function/SubscriptiononCreatePaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreatePaymentpostAuth0FunctionSubscriptiononCreatePaymentpostAuth0FunctionAppSyncFunction5C80BC3A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononCreatePaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptionOnCreatePaymentDataResolverFn/SubscriptionOnCreatePaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnCreatePaymentDataResolverFnSubscriptionOnCreatePaymentDataResolverFnAppSyncFunctionC8374435"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnCreatePaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononUpdatePaymentauth0Function/SubscriptiononUpdatePaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdatePaymentauth0FunctionSubscriptiononUpdatePaymentauth0FunctionAppSyncFunctionF4651FE8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononUpdatePaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononUpdatePaymentpostAuth0Function/SubscriptiononUpdatePaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdatePaymentpostAuth0FunctionSubscriptiononUpdatePaymentpostAuth0FunctionAppSyncFunction09FE7613"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononUpdatePaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptionOnUpdatePaymentDataResolverFn/SubscriptionOnUpdatePaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnUpdatePaymentDataResolverFnSubscriptionOnUpdatePaymentDataResolverFnAppSyncFunction1E58E150"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnUpdatePaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononDeletePaymentauth0Function/SubscriptiononDeletePaymentauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeletePaymentauth0FunctionSubscriptiononDeletePaymentauth0FunctionAppSyncFunction81157C72"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononDeletePaymentauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptiononDeletePaymentpostAuth0Function/SubscriptiononDeletePaymentpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeletePaymentpostAuth0FunctionSubscriptiononDeletePaymentpostAuth0FunctionAppSyncFunction505C3A65"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononDeletePaymentpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/SubscriptionOnDeletePaymentDataResolverFn/SubscriptionOnDeletePaymentDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnDeletePaymentDataResolverFnSubscriptionOnDeletePaymentDataResolverFnAppSyncFunction8E2E8F66"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnDeletePaymentDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentOwnerDataResolverFn/PaymentOwnerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PaymentOwnerDataResolverFnPaymentOwnerDataResolverFnAppSyncFunction67044D28"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "PaymentOwnerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerIAMRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeCustomerIAMRole081BC0A3"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomerIAMRole"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerDataSource/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeCustomerDataSource"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomerTable"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/QuerygetStripeCustomerauth0Function/QuerygetStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerygetStripeCustomerauth0FunctionQuerygetStripeCustomerauth0FunctionAppSyncFunctionBE17759A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerygetStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/QuerygetStripeCustomerpostAuth0Function/QuerygetStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerygetStripeCustomerpostAuth0FunctionQuerygetStripeCustomerpostAuth0FunctionAppSyncFunction57D4AD20"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerygetStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/QueryGetStripeCustomerDataResolverFn/QueryGetStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QueryGetStripeCustomerDataResolverFnQueryGetStripeCustomerDataResolverFnAppSyncFunction3CC3E3F0"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QueryGetStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/QuerylistStripeCustomersauth0Function/QuerylistStripeCustomersauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerylistStripeCustomersauth0FunctionQuerylistStripeCustomersauth0FunctionAppSyncFunction35985AD8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerylistStripeCustomersauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/QuerylistStripeCustomerspostAuth0Function/QuerylistStripeCustomerspostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerylistStripeCustomerspostAuth0FunctionQuerylistStripeCustomerspostAuth0FunctionAppSyncFunction9A4FCDD5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerylistStripeCustomerspostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/QueryListStripeCustomersDataResolverFn/QueryListStripeCustomersDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QueryListStripeCustomersDataResolverFnQueryListStripeCustomersDataResolverFnAppSyncFunctionC5CDD099"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QueryListStripeCustomersDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationcreateStripeCustomerinit0Function/MutationcreateStripeCustomerinit0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreateStripeCustomerinit0FunctionMutationcreateStripeCustomerinit0FunctionAppSyncFunctionA5738DAB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreateStripeCustomerinit0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationcreateStripeCustomerauth0Function/MutationcreateStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreateStripeCustomerauth0FunctionMutationcreateStripeCustomerauth0FunctionAppSyncFunction906B6FD6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreateStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationcreateStripeCustomerpostAuth0Function/MutationcreateStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreateStripeCustomerpostAuth0FunctionMutationcreateStripeCustomerpostAuth0FunctionAppSyncFunction0B285F7A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreateStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationCreateStripeCustomerDataResolverFn/MutationCreateStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationCreateStripeCustomerDataResolverFnMutationCreateStripeCustomerDataResolverFnAppSyncFunctionD69BE365"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationCreateStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationupdateStripeCustomerinit0Function/MutationupdateStripeCustomerinit0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdateStripeCustomerinit0FunctionMutationupdateStripeCustomerinit0FunctionAppSyncFunction228C5FC2"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdateStripeCustomerinit0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationupdateStripeCustomerauth0Function/MutationupdateStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdateStripeCustomerauth0FunctionMutationupdateStripeCustomerauth0FunctionAppSyncFunctionEB6FD94A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdateStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationupdateStripeCustomerpostAuth0Function/MutationupdateStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdateStripeCustomerpostAuth0FunctionMutationupdateStripeCustomerpostAuth0FunctionAppSyncFunction1219534E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdateStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationUpdateStripeCustomerDataResolverFn/MutationUpdateStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationUpdateStripeCustomerDataResolverFnMutationUpdateStripeCustomerDataResolverFnAppSyncFunction91CBE999"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationUpdateStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationdeleteStripeCustomerauth0Function/MutationdeleteStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationdeleteStripeCustomerauth0FunctionMutationdeleteStripeCustomerauth0FunctionAppSyncFunction56EDE861"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationdeleteStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationdeleteStripeCustomerpostAuth0Function/MutationdeleteStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationdeleteStripeCustomerpostAuth0FunctionMutationdeleteStripeCustomerpostAuth0FunctionAppSyncFunction6340F858"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationdeleteStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/MutationDeleteStripeCustomerDataResolverFn/MutationDeleteStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationDeleteStripeCustomerDataResolverFnMutationDeleteStripeCustomerDataResolverFnAppSyncFunction3ED20AEF"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationDeleteStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptiononCreateStripeCustomerauth0Function/SubscriptiononCreateStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreateStripeCustomerauth0FunctionSubscriptiononCreateStripeCustomerauth0FunctionAppSyncFunctionD8A7097D"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononCreateStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptiononCreateStripeCustomerpostAuth0Function/SubscriptiononCreateStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreateStripeCustomerpostAuth0FunctionSubscriptiononCreateStripeCustomerpostAuth0FunctionAppSyncFunction539DC639"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononCreateStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptionOnCreateStripeCustomerDataResolverFn/SubscriptionOnCreateStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnCreateStripeCustomerDataResolverFnSubscriptionOnCreateStripeCustomerDataResolverFnAppSyncFunction1418B4D4"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnCreateStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptiononUpdateStripeCustomerauth0Function/SubscriptiononUpdateStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdateStripeCustomerauth0FunctionSubscriptiononUpdateStripeCustomerauth0FunctionAppSyncFunction11DFE6F0"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononUpdateStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptiononUpdateStripeCustomerpostAuth0Function/SubscriptiononUpdateStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdateStripeCustomerpostAuth0FunctionSubscriptiononUpdateStripeCustomerpostAuth0FunctionAppSyncFunction0338B59E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononUpdateStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptionOnUpdateStripeCustomerDataResolverFn/SubscriptionOnUpdateStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnUpdateStripeCustomerDataResolverFnSubscriptionOnUpdateStripeCustomerDataResolverFnAppSyncFunctionB83FDE87"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnUpdateStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptiononDeleteStripeCustomerauth0Function/SubscriptiononDeleteStripeCustomerauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeleteStripeCustomerauth0FunctionSubscriptiononDeleteStripeCustomerauth0FunctionAppSyncFunctionDD68E56E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononDeleteStripeCustomerauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptiononDeleteStripeCustomerpostAuth0Function/SubscriptiononDeleteStripeCustomerpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeleteStripeCustomerpostAuth0FunctionSubscriptiononDeleteStripeCustomerpostAuth0FunctionAppSyncFunction6E27411A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononDeleteStripeCustomerpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/SubscriptionOnDeleteStripeCustomerDataResolverFn/SubscriptionOnDeleteStripeCustomerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnDeleteStripeCustomerDataResolverFnSubscriptionOnDeleteStripeCustomerDataResolverFnAppSyncFunction4E9225F2"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnDeleteStripeCustomerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerOwnerDataResolverFn/StripeCustomerOwnerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeCustomerOwnerDataResolverFnStripeCustomerOwnerDataResolverFnAppSyncFunctionC5C02857"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomerOwnerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionIAMRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeSubscriptionIAMRoleC7FE5AD2"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscriptionIAMRole"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionDataSource/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeSubscriptionDataSource"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscriptionTable"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/QuerygetStripeSubscriptionauth0Function/QuerygetStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerygetStripeSubscriptionauth0FunctionQuerygetStripeSubscriptionauth0FunctionAppSyncFunction886256E4"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerygetStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/QuerygetStripeSubscriptionpostAuth0Function/QuerygetStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerygetStripeSubscriptionpostAuth0FunctionQuerygetStripeSubscriptionpostAuth0FunctionAppSyncFunction7732A96E"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerygetStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/QueryGetStripeSubscriptionDataResolverFn/QueryGetStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QueryGetStripeSubscriptionDataResolverFnQueryGetStripeSubscriptionDataResolverFnAppSyncFunction5370A29F"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QueryGetStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/QuerylistStripeSubscriptionsauth0Function/QuerylistStripeSubscriptionsauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerylistStripeSubscriptionsauth0FunctionQuerylistStripeSubscriptionsauth0FunctionAppSyncFunction434CFE00"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerylistStripeSubscriptionsauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/QuerylistStripeSubscriptionspostAuth0Function/QuerylistStripeSubscriptionspostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QuerylistStripeSubscriptionspostAuth0FunctionQuerylistStripeSubscriptionspostAuth0FunctionAppSyncFunction90034E15"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QuerylistStripeSubscriptionspostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/QueryListStripeSubscriptionsDataResolverFn/QueryListStripeSubscriptionsDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "QueryListStripeSubscriptionsDataResolverFnQueryListStripeSubscriptionsDataResolverFnAppSyncFunction064DDB51"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "QueryListStripeSubscriptionsDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationcreateStripeSubscriptioninit0Function/MutationcreateStripeSubscriptioninit0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreateStripeSubscriptioninit0FunctionMutationcreateStripeSubscriptioninit0FunctionAppSyncFunction6ECD0F33"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreateStripeSubscriptioninit0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationcreateStripeSubscriptionauth0Function/MutationcreateStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreateStripeSubscriptionauth0FunctionMutationcreateStripeSubscriptionauth0FunctionAppSyncFunctionABB231B1"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreateStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationcreateStripeSubscriptionpostAuth0Function/MutationcreateStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationcreateStripeSubscriptionpostAuth0FunctionMutationcreateStripeSubscriptionpostAuth0FunctionAppSyncFunction2AF72024"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationcreateStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationCreateStripeSubscriptionDataResolverFn/MutationCreateStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationCreateStripeSubscriptionDataResolverFnMutationCreateStripeSubscriptionDataResolverFnAppSyncFunctionF99D5255"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationCreateStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationupdateStripeSubscriptioninit0Function/MutationupdateStripeSubscriptioninit0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdateStripeSubscriptioninit0FunctionMutationupdateStripeSubscriptioninit0FunctionAppSyncFunction4C3E9A54"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdateStripeSubscriptioninit0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationupdateStripeSubscriptionauth0Function/MutationupdateStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdateStripeSubscriptionauth0FunctionMutationupdateStripeSubscriptionauth0FunctionAppSyncFunction7DF32FAE"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdateStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationupdateStripeSubscriptionpostAuth0Function/MutationupdateStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationupdateStripeSubscriptionpostAuth0FunctionMutationupdateStripeSubscriptionpostAuth0FunctionAppSyncFunction2B1E883C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationupdateStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationUpdateStripeSubscriptionDataResolverFn/MutationUpdateStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationUpdateStripeSubscriptionDataResolverFnMutationUpdateStripeSubscriptionDataResolverFnAppSyncFunctionF82D6A1B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationUpdateStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationdeleteStripeSubscriptionauth0Function/MutationdeleteStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationdeleteStripeSubscriptionauth0FunctionMutationdeleteStripeSubscriptionauth0FunctionAppSyncFunctionF37A8394"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationdeleteStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationdeleteStripeSubscriptionpostAuth0Function/MutationdeleteStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationdeleteStripeSubscriptionpostAuth0FunctionMutationdeleteStripeSubscriptionpostAuth0FunctionAppSyncFunction4539AA31"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationdeleteStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/MutationDeleteStripeSubscriptionDataResolverFn/MutationDeleteStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "MutationDeleteStripeSubscriptionDataResolverFnMutationDeleteStripeSubscriptionDataResolverFnAppSyncFunctionA77ACAF5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "MutationDeleteStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptiononCreateStripeSubscriptionauth0Function/SubscriptiononCreateStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreateStripeSubscriptionauth0FunctionSubscriptiononCreateStripeSubscriptionauth0FunctionAppSyncFunctionB11DC07C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononCreateStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptiononCreateStripeSubscriptionpostAuth0Function/SubscriptiononCreateStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononCreateStripeSubscriptionpostAuth0FunctionSubscriptiononCreateStripeSubscriptionpostAuth0FunctionAppSyncFunction3C605F36"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononCreateStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptionOnCreateStripeSubscriptionDataResolverFn/SubscriptionOnCreateStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnCreateStripeSubscriptionDataResolverFnSubscriptionOnCreateStripeSubscriptionDataResolverFnAppSyncFunction77759F96"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnCreateStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptiononUpdateStripeSubscriptionauth0Function/SubscriptiononUpdateStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdateStripeSubscriptionauth0FunctionSubscriptiononUpdateStripeSubscriptionauth0FunctionAppSyncFunctionF6487620"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononUpdateStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptiononUpdateStripeSubscriptionpostAuth0Function/SubscriptiononUpdateStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononUpdateStripeSubscriptionpostAuth0FunctionSubscriptiononUpdateStripeSubscriptionpostAuth0FunctionAppSyncFunctionBE4C6950"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononUpdateStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptionOnUpdateStripeSubscriptionDataResolverFn/SubscriptionOnUpdateStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnUpdateStripeSubscriptionDataResolverFnSubscriptionOnUpdateStripeSubscriptionDataResolverFnAppSyncFunction45F16536"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnUpdateStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptiononDeleteStripeSubscriptionauth0Function/SubscriptiononDeleteStripeSubscriptionauth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeleteStripeSubscriptionauth0FunctionSubscriptiononDeleteStripeSubscriptionauth0FunctionAppSyncFunction60F798D5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononDeleteStripeSubscriptionauth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptiononDeleteStripeSubscriptionpostAuth0Function/SubscriptiononDeleteStripeSubscriptionpostAuth0Function.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptiononDeleteStripeSubscriptionpostAuth0FunctionSubscriptiononDeleteStripeSubscriptionpostAuth0FunctionAppSyncFunction6512338B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptiononDeleteStripeSubscriptionpostAuth0Function"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/SubscriptionOnDeleteStripeSubscriptionDataResolverFn/SubscriptionOnDeleteStripeSubscriptionDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SubscriptionOnDeleteStripeSubscriptionDataResolverFnSubscriptionOnDeleteStripeSubscriptionDataResolverFnAppSyncFunction52ABCCBF"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "SubscriptionOnDeleteStripeSubscriptionDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionOwnerDataResolverFn/StripeSubscriptionOwnerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeSubscriptionOwnerDataResolverFnStripeSubscriptionOwnerDataResolverFnAppSyncFunction312D1619"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscriptionOwnerDataResolverFn"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, <anonymous> in @aws-amplify/backend...",
+        "Array.forEach (:)"
+      ]
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/createPaymentIntentDataSource/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApicreatePaymentIntentDataSourceDEFB680B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...Import.addLambdaDataSource in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:33:35)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/stripeWebhookDataSource/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApistripeWebhookDataSourceBAB4F48D"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...Import.addLambdaDataSource in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:38:35)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/subscriptionManagerDataSource/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApisubscriptionManagerDataSourceA00A08F8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...Import.addLambdaDataSource in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:43:35)",
+        "...node internals, @aws-amplify/backend-deployer, @aws-cdk/toolkit-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "stripewebhooklambdaServiceRoleDefaultPolicyFADFAB76"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/create-payment-intent-lambda/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createpaymentintentlambdaServiceRoleDefaultPolicy45109163"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, /Users/wmak/Desktop/stripe-test/node_modules/constructs/lib/construct.js:348: in constructs...",
+        "Array.flatMap (:)",
+        "...constructs, aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/function/subscription-manager-lambda/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "subscriptionmanagerlambdaServiceRoleDefaultPolicyA088BC01"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/backend-function, /Users/wmak/Desktop/stripe-test/node_modules/constructs/lib/construct.js:348: in constructs...",
+        "Array.flatMap (:)",
+        "...constructs, aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AmplifyTableWaiterStateMachineRole470BE899"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)",
+        "...@aws-amplify/graphql-api-construct..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/Payment/PaymentTable/Default/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PaymentTable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Payment"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeCustomer/StripeCustomerTable/Default/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeCustomerTable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeCustomer"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/StripeSubscription/StripeSubscriptionTable/Default/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StripeSubscriptionTable"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, <anonymous> in @aws-amplify/graphql-api-construct...",
+        "Array.forEach (:)",
+        "...<anonymous> in @aws-amplify/graphql-api-construct...",
+        "Map.forEach (:)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "StripeSubscription"
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicyF1C1C548"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource437F26F5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayerE322F905"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB21775929"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct, @aws-amplify/backend-data, @aws-amplify/backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/createPaymentIntentDataSource/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApicreatePaymentIntentDataSourceServiceRole5ED7AECA"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...Import.addLambdaDataSource in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:33:35)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/stripeWebhookDataSource/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApistripeWebhookDataSourceServiceRole18F67A48"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...Import.addLambdaDataSource in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:38:35)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/subscriptionManagerDataSource/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApisubscriptionManagerDataSourceServiceRole154B2075"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...Import.addLambdaDataSource in aws-cdk-lib...",
+        "<anonymous> (/Users/wmak/Desktop/stripe-test/amplify/backend.ts:43:35)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, @aws-amplify/graphql-api-construct...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/createPaymentIntentDataSource/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApicreatePaymentIntentDataSourceServiceRoleDefaultPolicyE503A0D1"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/stripeWebhookDataSource/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApistripeWebhookDataSourceServiceRoleDefaultPolicyFCB738AA"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/amplify-stripetest-wmak-sandbox-579fcd1b31/data/amplifyData/L2GraphqlApi/subscriptionManagerDataSource/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyDataL2GraphqlApisubscriptionManagerDataSourceServiceRoleDefaultPolicyC5B09706"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ]
+}
