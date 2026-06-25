@@ -127,7 +127,7 @@ function AppContent() {
     setCustomerId(id);
   };
 
-  const handleSubscriptionComplete = async (subscriptionId: string) => {
+  const handleSubscriptionComplete = async (_subscriptionId: string) => {
     setTab("subscription");
     await checkAccess();
   };
