@@ -44,15 +44,35 @@ async function findSubscriptionRecord(
   return result.Items?.[0] ?? null;
 }
 
+async function findCustomerOwner(
+  customerTableName: string,
+  stripeCustomerId: string
+): Promise<string | null> {
+  const result = await docClient.send(
+    new ScanCommand({
+      TableName: customerTableName,
+      FilterExpression: "stripeCustomerId = :sid",
+      ExpressionAttributeValues: {
+        ":sid": stripeCustomerId,
+      },
+    })
+  );
+  return result.Items?.[0]?.owner ?? null;
+}
+
 async function upsertSubscriptionRecord(
   tableName: string,
+  customerTableName: string,
   sub: Stripe.Subscription
 ) {
   const existing = await findSubscriptionRecord(tableName, sub.id);
 
+  const stripeCustomerId = (sub.customer as string) ?? "";
+  const owner = await findCustomerOwner(customerTableName, stripeCustomerId);
+
   const fields = {
     stripeSubscriptionId: sub.id,
-    stripeCustomerId: (sub.customer as string) ?? "",
+    stripeCustomerId,
     status: sub.status,
     planAmount: sub.items.data[0]?.price?.unit_amount ?? 2000,
     currency: sub.items.data[0]?.price?.currency ?? "hkd",
@@ -99,7 +119,7 @@ async function upsertSubscriptionRecord(
         TableName: tableName,
         Item: {
           id: generateId(),
-          owner: fields.stripeCustomerId,
+          owner: owner ?? stripeCustomerId,
           ...fields,
           createdAt: fields.updatedAt,
         },
@@ -113,8 +133,9 @@ export const handler: Handler = async (event) => {
   const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
   const subTableName = process.env.STRIPE_SUBSCRIPTION_TABLE_NAME;
+  const customerTableName = process.env.STRIPE_CUSTOMER_TABLE_NAME;
 
-  if (!stripeSecretKey || !webhookSecret || !subTableName) {
+  if (!stripeSecretKey || !webhookSecret || !subTableName || !customerTableName) {
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Stripe configuration missing" }),
@@ -145,7 +166,7 @@ export const handler: Handler = async (event) => {
       case "customer.subscription.created":
       case "customer.subscription.deleted": {
         const sub = stripeEvent.data.object as Stripe.Subscription;
-        await upsertSubscriptionRecord(subTableName, sub);
+        await upsertSubscriptionRecord(subTableName, customerTableName, sub);
         break;
       }
       case "invoice.payment_succeeded": {
@@ -153,7 +174,7 @@ export const handler: Handler = async (event) => {
         const subId = invoice.subscription as string;
         if (subId) {
           const sub = await stripe.subscriptions.retrieve(subId);
-          await upsertSubscriptionRecord(subTableName, sub);
+          await upsertSubscriptionRecord(subTableName, customerTableName, sub);
           console.log("Invoice paid, subscription updated:", subId);
         }
         break;
@@ -164,7 +185,7 @@ export const handler: Handler = async (event) => {
         if (subId) {
           // Fetch the subscription to get its current status (likely past_due)
           const sub = await stripe.subscriptions.retrieve(subId);
-          await upsertSubscriptionRecord(subTableName, sub);
+          await upsertSubscriptionRecord(subTableName, customerTableName, sub);
           console.log("Invoice failed, subscription updated:", subId);
         }
         break;
