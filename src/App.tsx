@@ -49,8 +49,10 @@ function AppContent() {
         ACTIVE_STATUSES.includes(s.status)
       );
       setSubscriptionActive(hasAccess);
+      return hasAccess;
     } catch {
       setSubscriptionActive(false);
+      return false;
     }
   };
 
@@ -129,7 +131,11 @@ function AppContent() {
 
   const handleSubscriptionComplete = async (_subscriptionId: string) => {
     setTab("subscription");
-    await checkAccess();
+    for (let i = 0; i < 10; i++) {
+      const active = await checkAccess();
+      if (active) return;
+      await new Promise((r) => setTimeout(r, 2000));
+    }
   };
 
   const handleSignOut = () => {
