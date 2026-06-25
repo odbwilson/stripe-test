@@ -22,6 +22,8 @@ type PaymentState = {
   amount: string;
 };
 
+const ACTIVE_STATUSES = ["active", "trialing"];
+
 function App() {
   return (
     <Authenticator>
@@ -34,14 +36,23 @@ function AppContent() {
   const { user, signOut } = useAuthenticator();
   const [tab, setTab] = useState<Tab>("payment");
   const [customerId, setCustomerId] = useState<string | null>(null);
+  const [subscriptionActive, setSubscriptionActive] = useState<boolean | null>(null);
   const [payment, setPayment] = useState<PaymentState>({
     status: "idle",
     amount: "20.00",
   });
 
-  useEffect(() => {
-    loadCustomerId();
-  }, [user]);
+  const checkAccess = async () => {
+    try {
+      const { data: subs } = await client.models.StripeSubscription.list();
+      const hasAccess = subs.some((s) =>
+        ACTIVE_STATUSES.includes(s.status)
+      );
+      setSubscriptionActive(hasAccess);
+    } catch {
+      setSubscriptionActive(false);
+    }
+  };
 
   const loadCustomerId = async () => {
     try {
@@ -53,6 +64,10 @@ function AppContent() {
       console.error("Failed to load customer ID", e);
     }
   };
+
+  useEffect(() => {
+    Promise.all([loadCustomerId(), checkAccess()]);
+  }, [user]);
 
   const createPaymentIntent = async () => {
     setPayment((p) => ({ ...p, status: "loading", errorMessage: undefined }));
@@ -112,12 +127,29 @@ function AppContent() {
     setCustomerId(id);
   };
 
+  const handleSubscriptionComplete = async (subscriptionId: string) => {
+    setTab("subscription");
+    await checkAccess();
+  };
+
   const handleSignOut = () => {
     setCustomerId(null);
+    setSubscriptionActive(null);
     signOut();
   };
 
   const userEmail = user?.signInDetails?.loginId ?? "";
+
+  if (subscriptionActive === null) {
+    return (
+      <div className="app">
+        <div className="card" style={{ textAlign: "center", marginTop: "3rem" }}>
+          <div className="spinner" />
+          <p>Checking subscription status...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="app">
@@ -134,6 +166,7 @@ function AppContent() {
         <nav className="tab-nav">
           <button
             onClick={() => setTab("payment")}
+            disabled={!subscriptionActive}
             className={`tab ${tab === "payment" ? "tab--active" : ""}`}
           >
             One-Time Payment
@@ -144,7 +177,7 @@ function AppContent() {
           >
             Subscribe
           </button>
-          {customerId && (
+          {customerId && subscriptionActive && (
             <button
               onClick={() => setTab("subscription")}
               className={`tab ${tab === "subscription" ? "tab--active" : ""}`}
@@ -156,7 +189,22 @@ function AppContent() {
       </header>
 
       <main className="app-main">
-        {tab === "payment" && (
+        {!subscriptionActive && tab !== "subscribe" && (
+          <div className="card">
+            <h2>Subscription Required</h2>
+            <p>
+              You need an active subscription to access this feature.
+            </p>
+            <button
+              onClick={() => setTab("subscribe")}
+              className="pay-button"
+            >
+              Subscribe Now
+            </button>
+          </div>
+        )}
+
+        {tab === "payment" && subscriptionActive && (
           <>
             {payment.clientSecret ? (
               <Elements
@@ -247,12 +295,12 @@ function AppContent() {
         {tab === "subscribe" && (
           <SubscriptionSignup
             userEmail={userEmail}
-            onComplete={() => setTab("subscription")}
+            onComplete={handleSubscriptionComplete}
             onCustomerCreated={handleCustomerCreated}
           />
         )}
 
-        {tab === "subscription" && customerId && (
+        {tab === "subscription" && customerId && subscriptionActive && (
           <SubscriptionDashboard customerId={customerId} />
         )}
       </main>
