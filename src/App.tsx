@@ -177,12 +177,14 @@ function AppContent() {
           >
             One-Time Payment
           </button>
-          <button
-            onClick={() => setTab("subscribe")}
-            className={`tab ${tab === "subscribe" ? "tab--active" : ""}`}
-          >
-            Subscribe
-          </button>
+          {!subscriptionActive && (
+            <button
+              onClick={() => setTab("subscribe")}
+              className={`tab ${tab === "subscribe" ? "tab--active" : ""}`}
+            >
+              Subscribe
+            </button>
+          )}
           {customerId && subscriptionActive && (
             <button
               onClick={() => setTab("subscription")}

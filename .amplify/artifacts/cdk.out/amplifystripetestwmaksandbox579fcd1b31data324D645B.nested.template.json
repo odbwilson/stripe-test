@@ -1753,7 +1753,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "5e288dbb3d649d3ce61b88a29e6bb1646bd2a90a88c64de042e84ef8498f954d.zip"
+     "S3Key": "78d6eb3dfa499a16449e91d0941b88627185f69fb9199a7c34f07816cf8d60f2.zip"
     },
     "Environment": {
      "Variables": {
@@ -1850,7 +1850,7 @@
    "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-stripetest-wmak-sandbox-579fcd1b31/data/stripe-webhook-lambda/Resource",
-    "aws:asset:path": "asset.5e288dbb3d649d3ce61b88a29e6bb1646bd2a90a88c64de042e84ef8498f954d",
+    "aws:asset:path": "asset.78d6eb3dfa499a16449e91d0941b88627185f69fb9199a7c34f07816cf8d60f2",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
