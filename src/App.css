@@ -485,3 +485,275 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* ── Landing Page ── */
+
+.landing {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a2e;
+}
+
+.landing .container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4e 100%);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1.5rem 4rem;
+}
+
+.hero-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #b0b0cc;
+  margin: 0 0 2rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: #635bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cta-button:hover {
+  background: #4a42e8;
+}
+
+/* Problem */
+.problem {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+
+.problem h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.problem p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* How it works */
+.how-it-works {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.steps {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #635bff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.step h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.step-sub {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin: 0 0 0.75rem;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Why section */
+.why {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+
+.why h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.benefit h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.benefit p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Pricing */
+.pricing {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.pricing > .container > p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0 0 2rem;
+}
+
+.pricing-card {
+  max-width: 380px;
+  margin: 0 auto 2rem;
+  background: #fff;
+  border: 2px solid #635bff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricing-header h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  color: #1a1a2e;
+}
+
+.price {
+  margin-bottom: 1.5rem;
+}
+
+.price .amount {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.price .period {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.trial-steps {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.trial-steps h3 {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.trial-steps ol {
+  padding-left: 1.25rem;
+}
+
+.trial-steps li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Footer */
+.landing-footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.landing-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}

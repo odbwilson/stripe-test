@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Amplify build artifacts
-.amplify/artifacts
+# Amplify generated files
+.amplify/
+amplify_outputs.json
+.env

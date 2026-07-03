@@ -1,8 +1,8 @@
 import type { Handler } from "aws-lambda";
 import Stripe from "stripe";
 
-const PRICE_AMOUNT = 2000;
-const PRICE_CURRENCY = "hkd";
+const PRICE_AMOUNT = 9990;
+const PRICE_CURRENCY = "usd";
 const TRIAL_DAYS = 1;
 
 const corsHeaders = {
@@ -138,7 +138,7 @@ async function handleCreateSubscription(
   });
 
   const product = await stripe.products.create({
-    name: "Monthly Subscription",
+    name: "Queue Management Annual Plan",
   });
 
   const price = await stripe.prices.create({

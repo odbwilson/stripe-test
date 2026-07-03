@@ -5,9 +5,20 @@ import { SetupForm } from "./SetupForm";
 
 type Step = "form" | "loading" | "setup" | "confirming" | "complete" | "error";
 
+interface SubscriptionData {
+  subscriptionId: string;
+  status: string;
+  trialStart: string | null;
+  trialEnd: string | null;
+  currentPeriodStart: string | null;
+  currentPeriodEnd: string | null;
+  planAmount: number;
+  currency: string;
+}
+
 interface SubscriptionSignupProps {
   userEmail: string;
-  onComplete: (subscriptionId: string) => void;
+  onComplete: (subscriptionId: string, details: SubscriptionData) => void;
   onCustomerCreated: (customerId: string, email: string, name?: string) => void;
 }
 
@@ -79,10 +90,10 @@ export function SubscriptionSignup({
         throw new Error(err.error ?? "Failed to create subscription");
       }
 
-      const data = await response.json();
+      const data: SubscriptionData = await response.json();
       setSubscription(data);
       setStep("complete");
-      onComplete(data.subscriptionId);
+      onComplete(data.subscriptionId, data);
     } catch (error) {
       handleApiError(error, "Failed to create subscription");
     }
@@ -118,7 +129,7 @@ export function SubscriptionSignup({
           Subscription: {subscription.subscriptionId}
         </p>
         <p className="hint">
-          After the trial, you'll be charged HK$20.00/day. Check the{" "}
+          After the trial, you'll be charged US$99.90/year. Check the{" "}
           <strong>My Subscription</strong> tab for details.
         </p>
       </div>
@@ -190,7 +201,7 @@ export function SubscriptionSignup({
             Enter your card to start the 1-day free trial.
           </p>
           <p className="hint">
-            Plan: <strong>HK$20.00/day</strong> &mdash; No charge until trial
+            Plan: <strong>US$99.90/year</strong> &mdash; No charge until trial
             ends.
           </p>
 
@@ -223,7 +234,7 @@ export function SubscriptionSignup({
           <li>Enter your email and name</li>
           <li>Save a card — it won't be charged today</li>
           <li>1-day free trial starts immediately</li>
-          <li>After trial, you'll be billed HK$20.00/day</li>
+          <li>After trial, you'll be billed US$99.90/year</li>
         </ol>
         <h3>Test Cards</h3>
         <ul>

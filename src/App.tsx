@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react";
 import { generateClient } from "aws-amplify/data";
+import { LandingPage } from "./components/LandingPage";
 import { PaymentForm } from "./components/PaymentForm";
 import { PaymentStatus } from "./components/PaymentStatus";
 import { SubscriptionSignup } from "./components/SubscriptionSignup";
@@ -25,6 +26,12 @@ type PaymentState = {
 const ACTIVE_STATUSES = ["active", "trialing"];
 
 function App() {
+  const [showAuth, setShowAuth] = useState(false);
+
+  if (!showAuth) {
+    return <LandingPage onGetStarted={() => setShowAuth(true)} />;
+  }
+
   return (
     <Authenticator>
       <AppContent />
@@ -45,12 +52,15 @@ function AppContent() {
   const checkAccess = async () => {
     try {
       const { data: subs } = await client.models.StripeSubscription.list();
+      console.log("Subscriptions from list():", subs);
       const hasAccess = subs.some((s) =>
         ACTIVE_STATUSES.includes(s.status)
       );
+      console.log("hasAccess:", hasAccess);
       setSubscriptionActive(hasAccess);
       return hasAccess;
-    } catch {
+    } catch (e) {
+      console.error("checkAccess error:", e);
       setSubscriptionActive(false);
       return false;
     }
@@ -118,18 +128,49 @@ function AppContent() {
 
   const handleCustomerCreated = async (id: string, email: string, name?: string) => {
     try {
-      await client.models.StripeCustomer.create({
+      const result = await client.models.StripeCustomer.create({
         email,
         name: name ?? undefined,
         stripeCustomerId: id,
       });
+      console.log("StripeCustomer.create result:", JSON.stringify(result));
+      if (result.errors?.length) {
+        console.error("StripeCustomer.create errors:", JSON.stringify(result.errors));
+      }
     } catch (e) {
       console.error("Failed to save customer ID", e);
     }
     setCustomerId(id);
   };
 
-  const handleSubscriptionComplete = async (_subscriptionId: string) => {
+  const handleSubscriptionComplete = async (subscriptionId: string, details: any) => {
+    let recordSaved = false;
+    try {
+      const result = await client.models.StripeSubscription.create({
+        stripeCustomerId: customerId ?? "",
+        stripeSubscriptionId: subscriptionId,
+        status: details.status,
+        planAmount: details.planAmount,
+        currency: details.currency,
+        trialStart: details.trialStart ?? undefined,
+        trialEnd: details.trialEnd ?? undefined,
+        currentPeriodStart: details.currentPeriodStart ?? undefined,
+        currentPeriodEnd: details.currentPeriodEnd ?? undefined,
+      });
+      console.log("StripeSubscription.create result:", JSON.stringify(result));
+      if (result.errors?.length) {
+        console.error("StripeSubscription.create errors:", JSON.stringify(result.errors));
+      }
+      recordSaved = !!(result.data && !result.errors?.length);
+    } catch (e) {
+      console.error("Failed to save subscription record, waiting for webhook...", e);
+    }
+
+    if (recordSaved) {
+      const { data: subs } = await client.models.StripeSubscription.list();
+      console.log("Subscriptions after create:", subs);
+    }
+
     setTab("subscription");
     for (let i = 0; i < 10; i++) {
       const active = await checkAccess();
@@ -161,7 +202,7 @@ function AppContent() {
     <div className="app">
       <header className="app-header">
         <div className="header-row">
-          <h1>Stripe Test Suite</h1>
+          <h1>Queue Management</h1>
           <div className="user-info">
             <span className="user-email">{userEmail}</span>
             <button onClick={handleSignOut} className="sign-out-btn">
@@ -197,7 +238,7 @@ function AppContent() {
       </header>
 
       <main className="app-main">
-        {!subscriptionActive && tab !== "subscribe" && (
+        {!subscriptionActive && tab !== "subscribe" && tab !== "subscription" && (
           <div className="card">
             <h2>Subscription Required</h2>
             <p>
@@ -208,6 +249,24 @@ function AppContent() {
               className="pay-button"
             >
               Subscribe Now
+            </button>
+          </div>
+        )}
+
+        {!subscriptionActive && tab === "subscription" && (
+          <div className="card">
+            <div className="spinner" />
+            <h2>Activating Your Subscription</h2>
+            <p>
+              Your subscription is being activated. Please wait while we sync
+              your account...
+            </p>
+            <button
+              onClick={checkAccess}
+              className="pay-button"
+              style={{ marginTop: "0.75rem" }}
+            >
+              Retry
             </button>
           </div>
         )}
