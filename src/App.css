@@ -423,6 +423,11 @@
   border: 1px solid #fecaca;
 }
 
+.status-bar--warning {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
 .status-bar p {
   margin: 0;
   font-size: 0.85rem;

@@ -33,6 +33,7 @@ const schema = a.schema({
       currentPeriodEnd: a.datetime(),
       canceledAt: a.datetime(),
     })
+    .secondaryIndexes((index) => [index("stripeSubscriptionId")])
     .authorization((allow) => [allow.owner()]),
 });
 

@@ -4,8 +4,10 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
   ScanCommand,
+  QueryCommand,
   UpdateCommand,
   PutCommand,
+  DeleteCommand,
 } from "@aws-sdk/lib-dynamodb";
 
 const dynamoClient = new DynamoDBClient({ region: "us-east-1" });
@@ -27,21 +29,23 @@ function toISO(ts: number | null | undefined): string | null {
   }
 }
 
-async function findSubscriptionRecord(
+async function findSubscriptionRecords(
   tableName: string,
   stripeSubscriptionId: string
-): Promise<Record<string, any> | null> {
+): Promise<Record<string, any>[]> {
   const result = await docClient.send(
-    new ScanCommand({
+    new QueryCommand({
       TableName: tableName,
-      FilterExpression: "stripeSubscriptionId = :sid",
+      IndexName: "stripeSubscriptionsByStripeSubscriptionId",
+      KeyConditionExpression: "stripeSubscriptionId = :sid",
       ExpressionAttributeValues: {
         ":sid": stripeSubscriptionId,
       },
+      ConsistentRead: true,
     })
   );
 
-  return result.Items?.[0] ?? null;
+  return result.Items ?? [];
 }
 
 async function findCustomerOwner(
@@ -65,7 +69,7 @@ async function upsertSubscriptionRecord(
   customerTableName: string,
   sub: Stripe.Subscription
 ) {
-  const existing = await findSubscriptionRecord(tableName, sub.id);
+  let existing = await findSubscriptionRecords(tableName, sub.id);
 
   const stripeCustomerId = (sub.customer as string) ?? "";
   const owner = await findCustomerOwner(customerTableName, stripeCustomerId);
@@ -84,11 +88,34 @@ async function upsertSubscriptionRecord(
     updatedAt: new Date().toISOString(),
   };
 
-  if (existing) {
+  if (existing.length > 1) {
+    const resolveOwner = (record: Record<string, any>) =>
+      record.owner && record.owner !== stripeCustomerId ? record.owner : null;
+    const withOwner = existing.filter((r) => resolveOwner(r) !== null);
+    const preferred = withOwner.length > 0 ? withOwner : existing;
+    preferred.sort(
+      (a, b) =>
+        new Date(b.createdAt ?? 0).getTime() - new Date(a.createdAt ?? 0).getTime()
+    );
+    const [keep, ...stale] = preferred;
+    for (const record of stale) {
+      await docClient.send(
+        new DeleteCommand({
+          TableName: tableName,
+          Key: { id: record.id },
+        })
+      );
+    }
+    console.log("Deleted stale duplicate subscription records:", stale.map((r) => r.id).join(", "));
+    existing = [keep];
+  }
+
+  if (existing.length === 1) {
+    const record = existing[0];
     await docClient.send(
       new UpdateCommand({
         TableName: tableName,
-        Key: { id: existing.id },
+        Key: { id: record.id },
         UpdateExpression:
           "SET #status = :status, stripeCustomerId = :scid, " +
           "planAmount = :pa, #cur = :cur, trialStart = :ts, trialEnd = :te, " +

@@ -168,6 +168,19 @@ export function SubscriptionDashboard({
         </div>
       )}
 
+      {subscriptions &&
+        subscriptions.some((s) => s.status === "past_due" || s.status === "unpaid") && (
+          <div className="status-bar status-bar--warning">
+            <p>
+              <strong>Payment issue detected.</strong> Your subscription is{" "}
+              {subscriptions.some((s) => s.status === "past_due")
+                ? "past due"
+                : "unpaid"}
+              . Update your payment method to avoid cancellation.
+            </p>
+          </div>
+        )}
+
       {subscriptions && subscriptions.length > 0 && (
         <div className="subscriptions-list">
           {subscriptions.map((sub) => (

@@ -23,7 +23,8 @@ type PaymentState = {
   amount: string;
 };
 
-const ACTIVE_STATUSES = ["active", "trialing"];
+const FULL_ACCESS_STATUSES = ["active", "trialing"];
+const HAS_SUBSCRIPTION_STATUSES = ["active", "trialing", "past_due", "unpaid"];
 
 function App() {
   const [showAuth, setShowAuth] = useState(false);
@@ -44,6 +45,7 @@ function AppContent() {
   const [tab, setTab] = useState<Tab>("payment");
   const [customerId, setCustomerId] = useState<string | null>(null);
   const [subscriptionActive, setSubscriptionActive] = useState<boolean | null>(null);
+  const [hasSubscription, setHasSubscription] = useState<boolean>(false);
   const [payment, setPayment] = useState<PaymentState>({
     status: "idle",
     amount: "20.00",
@@ -54,14 +56,19 @@ function AppContent() {
       const { data: subs } = await client.models.StripeSubscription.list();
       console.log("Subscriptions from list():", subs);
       const hasAccess = subs.some((s) =>
-        ACTIVE_STATUSES.includes(s.status)
+        FULL_ACCESS_STATUSES.includes(s.status)
       );
-      console.log("hasAccess:", hasAccess);
+      const hasSub = subs.some((s) =>
+        HAS_SUBSCRIPTION_STATUSES.includes(s.status)
+      );
+      console.log("hasAccess:", hasAccess, "hasSubscription:", hasSub);
       setSubscriptionActive(hasAccess);
+      setHasSubscription(hasSub);
       return hasAccess;
     } catch (e) {
       console.error("checkAccess error:", e);
       setSubscriptionActive(false);
+      setHasSubscription(false);
       return false;
     }
   };
@@ -182,6 +189,7 @@ function AppContent() {
   const handleSignOut = () => {
     setCustomerId(null);
     setSubscriptionActive(null);
+    setHasSubscription(false);
     signOut();
   };
 
@@ -218,7 +226,7 @@ function AppContent() {
           >
             One-Time Payment
           </button>
-          {!subscriptionActive && (
+          {!hasSubscription && (
             <button
               onClick={() => setTab("subscribe")}
               className={`tab ${tab === "subscribe" ? "tab--active" : ""}`}
@@ -226,7 +234,7 @@ function AppContent() {
               Subscribe
             </button>
           )}
-          {customerId && subscriptionActive && (
+          {customerId && hasSubscription && (
             <button
               onClick={() => setTab("subscription")}
               className={`tab ${tab === "subscription" ? "tab--active" : ""}`}
@@ -238,7 +246,7 @@ function AppContent() {
       </header>
 
       <main className="app-main">
-        {!subscriptionActive && tab !== "subscribe" && tab !== "subscription" && (
+        {!hasSubscription && tab !== "subscribe" && tab !== "subscription" && (
           <div className="card">
             <h2>Subscription Required</h2>
             <p>
@@ -253,7 +261,20 @@ function AppContent() {
           </div>
         )}
 
-        {!subscriptionActive && tab === "subscription" && (
+        {hasSubscription && !subscriptionActive && tab === "subscription" && (
+          <div className="card">
+            <h2>Subscription Needs Attention</h2>
+            <p>
+              Your subscription is <strong>past due</strong>. Features are
+              temporarily locked until your payment method is updated.
+            </p>
+            <p className="hint">
+              Check the My Subscription tab to view status and update your card.
+            </p>
+          </div>
+        )}
+
+        {!hasSubscription && tab === "subscription" && (
           <div className="card">
             <div className="spinner" />
             <h2>Activating Your Subscription</h2>
@@ -367,7 +388,7 @@ function AppContent() {
           />
         )}
 
-        {tab === "subscription" && customerId && subscriptionActive && (
+        {tab === "subscription" && customerId && hasSubscription && (
           <SubscriptionDashboard customerId={customerId} />
         )}
       </main>
