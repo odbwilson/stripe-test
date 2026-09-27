@@ -4,7 +4,6 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
   ScanCommand,
-  QueryCommand,
   UpdateCommand,
   PutCommand,
   DeleteCommand,
@@ -34,10 +33,9 @@ async function findSubscriptionRecords(
   stripeSubscriptionId: string
 ): Promise<Record<string, any>[]> {
   const result = await docClient.send(
-    new QueryCommand({
+    new ScanCommand({
       TableName: tableName,
-      IndexName: "stripeSubscriptionsByStripeSubscriptionId",
-      KeyConditionExpression: "stripeSubscriptionId = :sid",
+      FilterExpression: "stripeSubscriptionId = :sid",
       ExpressionAttributeValues: {
         ":sid": stripeSubscriptionId,
       },
@@ -59,6 +57,7 @@ async function findCustomerOwner(
       ExpressionAttributeValues: {
         ":sid": stripeCustomerId,
       },
+      ConsistentRead: true,
     })
   );
   return result.Items?.[0]?.owner ?? null;
@@ -97,7 +96,8 @@ async function upsertSubscriptionRecord(
       (a, b) =>
         new Date(b.createdAt ?? 0).getTime() - new Date(a.createdAt ?? 0).getTime()
     );
-    const [keep, ...stale] = preferred;
+    const keep = preferred[0];
+    const stale = existing.filter((r) => r.id !== keep.id);
     for (const record of stale) {
       await docClient.send(
         new DeleteCommand({
