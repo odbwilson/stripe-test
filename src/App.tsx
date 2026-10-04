@@ -64,6 +64,13 @@ function AppContent() {
       console.log("hasAccess:", hasAccess, "hasSubscription:", hasSub);
       setSubscriptionActive(hasAccess);
       setHasSubscription(hasSub);
+
+      const live = subs.find((s) =>
+        HAS_SUBSCRIPTION_STATUSES.includes(s.status)
+      );
+      if (live?.stripeCustomerId) {
+        setCustomerId(live.stripeCustomerId);
+      }
       return hasAccess;
     } catch (e) {
       console.error("checkAccess error:", e);
@@ -77,7 +84,8 @@ function AppContent() {
     try {
       const { data: customers } = await client.models.StripeCustomer.list();
       if (customers.length > 0) {
-        setCustomerId(customers[0].stripeCustomerId);
+        const fallback = customers[0].stripeCustomerId;
+        setCustomerId((prev) => prev ?? fallback);
       }
     } catch (e) {
       console.error("Failed to load customer ID", e);
